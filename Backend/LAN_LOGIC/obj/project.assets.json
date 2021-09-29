@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "LAN_Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LAN_Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_Enums.dll": {}
+        }
+      },
+      "LAN_ILOGIC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "LAN_Enums": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LAN_ILOGIC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_ILOGIC.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LAN_Enums/1.0.0": {
+      "type": "project",
+      "path": "../LAN_Enums/LAN_Enums.csproj",
+      "msbuildProject": "../LAN_Enums/LAN_Enums.csproj"
+    },
+    "LAN_ILOGIC/1.0.0": {
+      "type": "project",
+      "path": "../LAN_ILOGIC/LAN_ILOGIC.csproj",
+      "msbuildProject": "../LAN_ILOGIC/LAN_ILOGIC.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "LAN_Enums >= 1.0.0",
+      "LAN_ILOGIC >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\gwigg\\.nuget\\packages\\": {},
@@ -40,7 +78,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
+            },
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,3 +1,7 @@
+using LAN_ILOGIC.Containers;
+using LAN_ILOGIC.Models;
+using LAN_LOGIC.Containers;
+using LAN_LOGIC.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +30,18 @@ namespace LANBackend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IAvailability, Availability>();
+            services.AddScoped<IAvailabilityContainer, AvailabilityContainer>();
+            services.AddScoped<IDate, Date>();
+            services.AddScoped<IDateContainer, DateContainer>();
+            services.AddScoped<IParty, Party>();
+            services.AddScoped<IPartyContainer, PartyContainer>();
+            services.AddScoped<ITeam, Team>();
+            services.AddScoped<ITeamContainer, TeamContainer>();
+            services.AddScoped<ITourney, Tourney>();
+            services.AddScoped<ITourneyContainer, TourneyContainer>();
+            services.AddScoped<IUser, User>();
+            services.AddScoped<IUserContainer, UserContainer>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LAN_Enums\LAN_Enums.csproj" />
+    <ProjectReference Include="..\LAN_ILOGIC\LAN_ILOGIC.csproj" />
+  </ItemGroup>
+
 </Project>

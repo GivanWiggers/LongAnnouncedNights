@@ -1,0 +1,9 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\netcoreapp3.1\LAN_Enums.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\netcoreapp3.1\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\netcoreapp3.1\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\netcoreapp3.1\LAN_Enums.pdb

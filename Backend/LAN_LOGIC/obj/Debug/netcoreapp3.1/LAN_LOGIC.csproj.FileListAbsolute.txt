@@ -1,0 +1,14 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_LOGIC.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_LOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_LOGIC.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_ILOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_ILOGIC.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.csproj.CopyComplete
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.pdb

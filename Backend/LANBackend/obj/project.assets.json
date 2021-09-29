@@ -82,6 +82,63 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "LAN_DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LAN_DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_DAL.dll": {}
+        }
+      },
+      "LAN_Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LAN_Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_Enums.dll": {}
+        }
+      },
+      "LAN_IDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LAN_IDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_IDAL.dll": {}
+        }
+      },
+      "LAN_ILOGIC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "LAN_Enums": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LAN_ILOGIC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_ILOGIC.dll": {}
+        }
+      },
+      "LAN_LOGIC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "LAN_Enums": "1.0.0",
+          "LAN_ILOGIC": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LAN_LOGIC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAN_LOGIC.dll": {}
+        }
       }
     }
   },
@@ -256,10 +313,39 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "LAN_DAL/1.0.0": {
+      "type": "project",
+      "path": "../LAN_DAL/LAN_DAL.csproj",
+      "msbuildProject": "../LAN_DAL/LAN_DAL.csproj"
+    },
+    "LAN_Enums/1.0.0": {
+      "type": "project",
+      "path": "../LAN_Enums/LAN_Enums.csproj",
+      "msbuildProject": "../LAN_Enums/LAN_Enums.csproj"
+    },
+    "LAN_IDAL/1.0.0": {
+      "type": "project",
+      "path": "../LAN_IDAL/LAN_IDAL.csproj",
+      "msbuildProject": "../LAN_IDAL/LAN_IDAL.csproj"
+    },
+    "LAN_ILOGIC/1.0.0": {
+      "type": "project",
+      "path": "../LAN_ILOGIC/LAN_ILOGIC.csproj",
+      "msbuildProject": "../LAN_ILOGIC/LAN_ILOGIC.csproj"
+    },
+    "LAN_LOGIC/1.0.0": {
+      "type": "project",
+      "path": "../LAN_LOGIC/LAN_LOGIC.csproj",
+      "msbuildProject": "../LAN_LOGIC/LAN_LOGIC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "LAN_DAL >= 1.0.0",
+      "LAN_IDAL >= 1.0.0",
+      "LAN_ILOGIC >= 1.0.0",
+      "LAN_LOGIC >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -297,7 +383,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj"
+            },
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj"
+            },
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj"
+            },
+            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
