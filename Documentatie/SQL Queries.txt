@@ -1,0 +1,26 @@
+Parties van UserID=1:
+
+SELECT * FROM `user` u INNER JOIN `party` p ON u.UserID = p.UserID WHERE u.UserID=1;
+
+Alle datums voor Party:
+
+SELECT * FROM `party` p INNER JOIN `date` d ON p.PartyID = d.PartyID WHERE p.PartyID=1;
+
+Alle beschikbaarheden voor Party:
+
+SELECT * FROM `party` p INNER JOIN `date` d ON p.PartyID = d.PartyID INNER JOIN `availability` a ON d.DateID=a.AvailabilityID WHERE p.PartyID=1 (AND a.UserID=1);
+SPECIFIEKE SELECTIE => SELECT p.PartyID, p.Title, d.DateTime, a.UserID, a.Available FROM `party` p INNER JOIN `date` d ON p.PartyID = d.PartyID INNER JOIN `availability` a ON d.DateID=a.AvailabilityID WHERE p.PartyID=1 AND a.UserID=1;
+Teams van Tourney:
+
+SELECT * FROM `tourney` tourney INNER JOIN `team` team ON tourney.TourneyID = team.TourneyID WHERE tourney.TourneyID=1;
+
+Tourney alle teams met spelers met naam:
+
+SELECT * FROM `tourney` tourney INNER JOIN `team` team ON tourney.TourneyID = team.TourneyID INNER JOIN `userInTeam` ut ON ut.TeamID=team.TeamID INNER JOIN `user` u ON u.UserID=ut.UserID WHERE tourney.TourneyID=1;
+
+Vanuit party, tourney, alle teams, elke speler in team en elke user.
+
+SELECT * FROM `party` p INNER JOIN `tourney` tr ON tr.TourneyID=p.TourneyID INNER JOIN `team` team ON tr.TourneyID = team.TourneyID INNER JOIN `userInTeam` ut ON ut.TeamID=team.TeamID INNER JOIN `user` u ON u.UserID=ut.UserID WHERE p.PartyID=1;
+BETERE SELECTIE:
+SELECT p.PartyID, p.Title, p.Game, p.DateOfParty, tr.Winner, tr.TypeOf, team.Name, u.Name, u.Email FROM `party` p INNER JOIN `tourney` tr ON tr.TourneyID=p.TourneyID INNER JOIN `team` team ON tr.TourneyID = team.TourneyID INNER JOIN `userInTeam` ut ON ut.TeamID=team.TeamID INNER JOIN `user` u ON u.UserID=ut.UserID WHERE p.PartyID=1;
+
