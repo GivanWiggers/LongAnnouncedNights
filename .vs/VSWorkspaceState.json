@@ -3,8 +3,11 @@
     "",
     "\\Backend",
     "\\Backend\\LANBackend",
+    "\\Backend\\LAN_LOGIC",
     "\\Databases",
-    "\\Frontend"
+    "\\Frontend",
+    "\\Frontend\\frontend",
+    "\\Frontend\\frontend\\src"
   ],
   "SelectedNode": "\\Backend\\LongAnnouncedNights.sln",
   "PreviewInSolutionExplorer": false

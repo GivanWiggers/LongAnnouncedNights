@@ -6,8 +6,8 @@ namespace LAN_Enums
 {
     public enum AvailabilityEnum
     {
-        Available,
-        Maybe,
-        NotAvailable
+        Available = 1,
+        Maybe = 2,
+        NotAvailable = 3
     }
 }

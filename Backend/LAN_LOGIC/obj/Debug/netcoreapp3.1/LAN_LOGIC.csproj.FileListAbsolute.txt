@@ -12,3 +12,7 @@ C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\b
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.csproj.CopyComplete
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.dll
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\obj\Debug\netcoreapp3.1\LAN_LOGIC.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_IDAL.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_IDAL.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_LOGIC\bin\Debug\netcoreapp3.1\LAN_DTO.pdb

@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LAN_DTO\LAN_DTO.csproj" />
+  </ItemGroup>
+
 </Project>

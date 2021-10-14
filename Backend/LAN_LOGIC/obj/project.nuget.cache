@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "42JxwvCs1XVZIdPXwjN69IpWLqH0AAm/7ZF59HxuTPmXYFcc9VfHKLjCLlUvCuq5G+xVcwA2yadnz4w3j/FX2A==",
+  "dgSpecHash": "04yoFa/G1YuDv4kBR3RklfRDKmGk1aZofTRJYYGMlHxWsdWJEg5B4uHXmo4SmrSOUTW5DbV1SX4uhDoeAZMoRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gwigg\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

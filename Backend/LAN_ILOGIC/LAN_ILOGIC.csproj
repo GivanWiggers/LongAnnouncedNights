@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LAN_DTO\LAN_DTO.csproj" />
     <ProjectReference Include="..\LAN_Enums\LAN_Enums.csproj" />
   </ItemGroup>
 

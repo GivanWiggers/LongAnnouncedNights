@@ -10,7 +10,7 @@ namespace LAN_ILOGIC.Models
         public int TourneyID { get; }
         public int UserID { get; }
         public ITeam Winner { get; }
-        public TourneyStyleEnum Type { get; }
+        public TourneyStyleEnum TypeOf { get; }
         public List<ITeam> Teams { get; set; }
     }
 }

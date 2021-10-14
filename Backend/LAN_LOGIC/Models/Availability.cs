@@ -10,14 +10,14 @@ namespace LAN_LOGIC.Models
     {
         public int AvailabilityID { get; private set; }
         public int DateID { get; private set; }
-        public int UserID { get; private set; }
+        public IUser User { get; private set; }
         public AvailabilityEnum Available { get; set; }
 
-        public Availability( int availabilityID, int dateID, int userID, AvailabilityEnum available)
+        public Availability( int availabilityID, int dateID, User user, AvailabilityEnum available)
         {
             AvailabilityID = availabilityID;
             DateID = dateID;
-            UserID = userID;
+            User = user;
             Available = available;
         }
     }

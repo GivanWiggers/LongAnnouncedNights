@@ -9,7 +9,7 @@ namespace LAN_ILOGIC.Models
     {
         public int AvailabilityID { get; }
         public int DateID { get; }
-        public int UserID { get; }
+        public IUser User { get; }
         public AvailabilityEnum Available { get; set; }
     }
 }

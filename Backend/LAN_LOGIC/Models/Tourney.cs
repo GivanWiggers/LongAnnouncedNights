@@ -11,7 +11,7 @@ namespace LAN_LOGIC.Models
         public int TourneyID { get; private set; }
         public int UserID { get; private set; }
         public ITeam Winner { get; private set; }
-        public TourneyStyleEnum Type { get; private set; }
+        public TourneyStyleEnum TypeOf { get; private set; }
         public List<ITeam> Teams { get; set; }
 
         public Tourney(int tourneyID, int userID, Team winner, TourneyStyleEnum type)
@@ -19,7 +19,7 @@ namespace LAN_LOGIC.Models
             TourneyID = tourneyID;
             UserID = userID;
             Winner = winner;
-            Type = type;
+            TypeOf = type;
         }
     }
 }

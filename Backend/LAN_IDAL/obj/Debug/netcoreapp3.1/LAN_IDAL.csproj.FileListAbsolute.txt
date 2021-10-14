@@ -1,0 +1,14 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_IDAL.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_IDAL.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_IDAL.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_DTO.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\bin\Debug\netcoreapp3.1\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.csproj.CopyComplete
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_IDAL\obj\Debug\netcoreapp3.1\LAN_IDAL.pdb

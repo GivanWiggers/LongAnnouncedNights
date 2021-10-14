@@ -10,3 +10,5 @@ C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\netcoreapp3.1\LAN_Enums.dll
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\netcoreapp3.1\LAN_Enums.pdb
 C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\netcoreapp3.1\LAN_ILOGIC.csproj.CopyComplete
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\netcoreapp3.1\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\netcoreapp3.1\LAN_DTO.pdb
