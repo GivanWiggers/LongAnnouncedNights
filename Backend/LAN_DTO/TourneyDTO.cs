@@ -14,13 +14,17 @@ namespace LAN_DTO
     {
         [Key]
         public int TourneyID { get;  set; }
+
         [ForeignKey("UserID")]
         public UserDTO User { get;  set; }
-        [ForeignKey("Winner")]
-        public TeamDTO WinningTeam { get;  set; }
+
+        [ForeignKey("WinnerID")]
+        public TeamDTO Winner{  get;  set; }
+
         [JsonConverter(typeof(StringEnumConverter))]
         public TourneyStyleEnum TypeOf { get;  set; }
-        [ForeignKey("TourneyID")]
+
+        //[ForeignKey("TourneyID")]
         public List<TeamDTO> Teams { get; set; }
     }
 }

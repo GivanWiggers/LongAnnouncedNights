@@ -19,6 +19,7 @@ namespace LAN_DTO
         public TourneyDTO Tourney { get; set; }
         public string Title { get; set; }
         public string Game { get; set; }
+        //[ForeignKey("PartyID")]
         public DateTime DateOfParty { get; set; }  
         [ForeignKey("PartyID")]
         public List<DateDTO> Dates { get; set; }

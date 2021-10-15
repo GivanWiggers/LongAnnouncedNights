@@ -12,7 +12,7 @@ namespace LAN_DTO
         [Key]
         public int DateID { get;  set; }
         //[ForeignKey("PartyID")]
-        public PartyDTO Party { get;  set; }
+        //public PartyDTO Party { get;  set; }
         public DateTime DateTime { get;  set; }
         [ForeignKey("DateID")]
         public List<AvailabilityDTO> UsersAvailable { get; set; }

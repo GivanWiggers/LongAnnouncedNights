@@ -33,7 +33,11 @@ namespace LANBackend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LANContext>(options => options.UseMySQL("server=localhost;port=3308;user=root;password=root;database=db"));
+            services.AddDbContext<LANContext>(options => {
+                options.UseMySQL("server=localhost;port=3308;user=root;password=root;database=db");
+                options.EnableSensitiveDataLogging();
+            }
+            );
 
             services.AddScoped<IAvailabilityContainer, AvailabilityContainer>();
             services.AddScoped<IDateContainer, DateContainer>();
@@ -43,7 +47,8 @@ namespace LANBackend
             services.AddScoped<IUserContainer, UserContainer>();
 
             services.AddScoped<IPartyDAL, PartyDAL>();
-            
+            services.AddScoped<IFillData, FillData>();
+
             //services.AddScoped<IAvailability, Availability>();
             //services.AddScoped<IDate, Date>();
             //services.AddScoped<IParty, Party>();
@@ -64,8 +69,15 @@ namespace LANBackend
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IFillData fill)
         {
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<LANContext>();
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
+                fill.fillData();
+            }
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -16,6 +16,6 @@ namespace LAN_DAL
         public DbSet<TeamDTO> Teams{ get; set; }
         public DbSet<TourneyDTO> Tourneys { get; set; }
         public DbSet<UserDTO> Users { get; set; }
-        //public DbSet<UsersInTeamDTO> usersInTeams { get; set; }
+        public DbSet<UsersInTeamDTO> usersInTeams { get; set; }
     }
 }

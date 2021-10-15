@@ -11,10 +11,14 @@ namespace LAN_DTO
     {
         [Key]
         public int TeamID { get; set; }
-        //[ForeignKey("TourneyID")]
-        //public TourneyDTO Tourney { get; set; }
+        public int UserID { get; set; }
         public string Name { get; set; }
         [ForeignKey("TeamID")]
         public List<UsersInTeamDTO> Players { get; set; }
+        [ForeignKey("TourneyID")]
+        public int TourneyID { get; set; }
+
+        //[ForeignKey("TourneyID")]
+        //public int TourneyID { get; set; }
     }
 }

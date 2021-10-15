@@ -10,8 +10,9 @@ namespace LAN_DTO
     public class UsersInTeamDTO
     {
         
-        public int UserInTeamID { get; }
         [Key]
+        public int UserInTeamID { get; set; }
+        [ForeignKey("TeamID")]
         public int TeamID { get; set; }
         [ForeignKey("UserID")]
         public UserDTO User { get; set; }
