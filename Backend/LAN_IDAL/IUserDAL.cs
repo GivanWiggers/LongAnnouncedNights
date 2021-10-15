@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LAN_ILOGIC.Containers
+namespace LAN_IDAL
 {
-    public interface IUserContainer
+    public interface IUserDAL
     {
         public UserDTO GetUser(string email, string password);
     }

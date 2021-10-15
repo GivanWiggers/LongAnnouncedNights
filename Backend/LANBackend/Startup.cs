@@ -47,6 +47,7 @@ namespace LANBackend
             services.AddScoped<IUserContainer, UserContainer>();
 
             services.AddScoped<IPartyDAL, PartyDAL>();
+            services.AddScoped<IUserDAL, UserDAL>();
             services.AddScoped<IFillData, FillData>();
 
             //services.AddScoped<IAvailability, Availability>();

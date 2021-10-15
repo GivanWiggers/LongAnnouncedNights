@@ -21,9 +21,9 @@ namespace LANBackend.Controllers
         [Route("read"), HttpGet]
         public IActionResult Read(int party_id)
         {
-            PartyDTO component = _partyContainer.GetParty(party_id);
+            PartyDTO party = _partyContainer.GetParty(party_id);
 
-            return Ok(component);
+            return Ok(party);
         }
     }
 }
