@@ -46,13 +46,7 @@ namespace LAN_DAL
                 Email = "user4@gmail.com",
                 Password = "123"
             };
-            List<UserDTO> users = new List<UserDTO>()
-            {
-                user1,
-                user2,
-                user3,
-                user4
-            };
+            
             UsersInTeamDTO user1InTeam1Tourney1 = new UsersInTeamDTO()
             {
                 UserInTeamID = 1,
@@ -87,7 +81,6 @@ namespace LAN_DAL
                     user1InTeam1Tourney1,
                     user2InTeam1Tourney1
                 },
-                TourneyID = 1
             };
             TeamDTO team2 = new TeamDTO
             {
@@ -98,7 +91,6 @@ namespace LAN_DAL
                     user3InTeam2Tourney1,
                     user4InTeam2Tourney1
                 },
-               TourneyID =1
             };
             _Context.SaveChanges();
             TourneyDTO tourney1 = new TourneyDTO
@@ -106,7 +98,7 @@ namespace LAN_DAL
                 TourneyID = 1,
                 User = user1,
                 Winner = team2,
-                TypeOf = TourneyStyleEnum.FourSingle,
+                TypeOf = TourneyStyleEnum.SixDouble,
                 Teams = new List<TeamDTO>()
                 {
                     team1,
@@ -203,20 +195,7 @@ namespace LAN_DAL
                     date2Party1
                 }
             };
-            foreach(UserDTO user in users)
-            {
-                _Context.Users.Add(user);
-            }
-            //_Context.Users.Add(user1);
-            //_Context.Users.Add(user2);
-            //_Context.Users.Add(user3);
-            //_Context.Users.Add(user4);
-            _Context.SaveChanges();
-
-            _Context.usersInTeams.Add(user1InTeam1Tourney1);
-            _Context.usersInTeams.Add(user2InTeam1Tourney1);
-            _Context.usersInTeams.Add(user3InTeam2Tourney1);
-            _Context.usersInTeams.Add(user4InTeam2Tourney1);
+            
             _Context.Teams.Add(team1);
             _Context.Teams.Add(team2);
             _Context.SaveChanges();

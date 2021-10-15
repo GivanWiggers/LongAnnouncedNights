@@ -24,7 +24,7 @@ namespace LAN_DTO
         [JsonConverter(typeof(StringEnumConverter))]
         public TourneyStyleEnum TypeOf { get;  set; }
 
-        //[ForeignKey("TourneyID")]
+        [ForeignKey("TourneyID")]
         public List<TeamDTO> Teams { get; set; }
     }
 }
