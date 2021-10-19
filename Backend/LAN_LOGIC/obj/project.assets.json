@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj",
+      "projectUniqueName": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj",
       "projectName": "LAN_LOGIC",
-      "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj",
+      "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\LAN_LOGIC.csproj",
       "packagesPath": "C:\\Users\\gwigg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\obj\\",
+      "outputPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -154,14 +154,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
-              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
+            "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
             },
-            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
-              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj"
+            "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj"
             },
-            "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj": {
-              "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj"
+            "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj": {
+              "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj"
             }
           }
         }

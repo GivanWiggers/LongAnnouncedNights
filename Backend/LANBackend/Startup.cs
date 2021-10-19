@@ -45,9 +45,11 @@ namespace LANBackend
             services.AddScoped<ITeamContainer, TeamContainer>();
             services.AddScoped<ITourneyContainer, TourneyContainer>();
             services.AddScoped<IUserContainer, UserContainer>();
+            services.AddScoped<ITourneyContainer, TourneyContainer>();
 
             services.AddScoped<IPartyDAL, PartyDAL>();
             services.AddScoped<IUserDAL, UserDAL>();
+            services.AddScoped<ITourneyDAL, TourneyDAL>();
             services.AddScoped<IFillData, FillData>();
 
             //services.AddScoped<IAvailability, Availability>();

@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LAN_ILOGIC.Containers
+namespace LAN_IDAL
 {
-    public interface ITourneyContainer
+    public interface ITourneyDAL
     {
         public List<TourneyDTO> GetTourneys(int userId);
     }

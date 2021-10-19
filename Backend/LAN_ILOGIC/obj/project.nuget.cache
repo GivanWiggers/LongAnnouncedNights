@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P6hhcljlBP3f8qztQ3UGefHSXbZP2A9DdFFuxd/g+6rKjxRALf8mQye3RydDuz6RN47qpohL/uIb7Mor4GllXQ==",
+  "dgSpecHash": "q/t3IIjQv6osNVMUeW5hJT6vVnOrufkKbgF+0WjSg3Q9r2jq18J3o7zjtvtwX6QrFSGw2CfPGB2X3SlmLD63YQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj",
+  "projectFilePath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC\\LAN_ILOGIC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gwigg\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
