@@ -17,7 +17,12 @@ namespace LAN_LOGIC.Containers
 
         public UserDTO GetUser(string email, string password)
         {
-            return _userDAL.GetUser(email, password);
+            UserDTO user = _userDAL.GetUser(email, password);
+            if (user != null)
+            {
+                user.Password = null;
+            }
+            return user;
         }
     }
 }

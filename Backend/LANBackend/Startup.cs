@@ -50,6 +50,7 @@ namespace LANBackend
             services.AddScoped<IPartyDAL, PartyDAL>();
             services.AddScoped<IUserDAL, UserDAL>();
             services.AddScoped<ITourneyDAL, TourneyDAL>();
+            services.AddScoped<ITeamDAL, TeamDAL>();
             services.AddScoped<IFillData, FillData>();
 
             //services.AddScoped<IAvailability, Availability>();

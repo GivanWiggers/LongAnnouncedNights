@@ -18,10 +18,18 @@ namespace LANBackend.Controllers
             _tourneyContainer = tourneyContainer;
         }
 
-        [Route("read"), HttpGet]
-        public IActionResult Read(int userId)
+        [Route("readAllFromUser"), HttpGet]
+        public IActionResult ReadAllFromUser(int userId)
         {
             List<TourneyDTO> tourney = _tourneyContainer.GetTourneys(userId);
+
+            return Ok(tourney);
+        }
+
+        [Route("read"), HttpGet]
+        public IActionResult Read(int tourneyId)
+        {
+            TourneyDTO tourney = _tourneyContainer.GetTourney(tourneyId);
 
             return Ok(tourney);
         }

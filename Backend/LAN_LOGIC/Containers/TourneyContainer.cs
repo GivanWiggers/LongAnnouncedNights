@@ -7,17 +7,22 @@ using System.Text;
 
 namespace LAN_LOGIC.Containers
 {
-    public class TourneyContainer: ITourneyContainer
-    { 
+    public class TourneyContainer : ITourneyContainer
+    {
         readonly ITourneyDAL _tourneyDAL;
         public TourneyContainer(ITourneyDAL tourneyDAL)
-    {
-        _tourneyDAL = tourneyDAL;
-    }
+        {
+            _tourneyDAL = tourneyDAL;
+        }
 
-    public List<TourneyDTO> GetTourneys(int userId)
+        public List<TourneyDTO> GetTourneys(int userId)
         {
             return _tourneyDAL.GetTourneys(userId);
+        }
+
+        public TourneyDTO GetTourney(int tourneyId)
+        {
+            return _tourneyDAL.GetTourney(tourneyId);
         }
     }
 }

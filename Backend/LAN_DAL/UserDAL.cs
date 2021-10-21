@@ -20,9 +20,19 @@ namespace LAN_DAL
         {
             return _Context.Users
                 .Where(u => u.Email == email && u.Password == password)
-                
+
                 //.Except(u => u.Password)
                 .FirstOrDefault();
-        } 
+        }
+
+        //public UserDTO GetUser(string email, string password)
+        //{
+        //    var user = _Context.Users
+        //        .Where(u => u.Email == email && u.Password == password)
+
+        //        .FirstOrDefault();
+        //   // UserDTO userDTO = new UserDTO(user.UserID, user.Name, user.Email);
+        //    return userDTO;
+        //}
     }
 }

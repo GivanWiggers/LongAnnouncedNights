@@ -8,5 +8,6 @@ namespace LAN_IDAL
     public interface ITourneyDAL
     {
         public List<TourneyDTO> GetTourneys(int userId);
+        public TourneyDTO GetTourney(int tourneyId);
     }
 }
