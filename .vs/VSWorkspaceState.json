@@ -6,6 +6,6 @@
     "\\Backend\\LAN_LOGIC",
     "\\Backend\\LAN_LOGIC\\Models"
   ],
-  "SelectedNode": "\\Backend\\LongAnnouncedNights.sln",
+  "SelectedNode": "\\Backend\\LAN_LOGIC\\Models\\User.cs",
   "PreviewInSolutionExplorer": false
 }
