@@ -16,41 +16,153 @@ export default function HistoryPage() {
   
 
   return (
-      <form>
-          <h1> This is a multiple datepicker I hope that I will get this to be static and not just opened by opening an input </h1>
-        
-        <Calendar     
-            multiple
-            numberOfMonths={2}
-            weekStartDayIndex={1}
-            format="DD/MM/YYYY HH:mm"
-            
-            className="yellow rmdp-mobile"
-            value={value} 
-            onChange={(dates: DateObject[]) => setValue(dates)}
-            plugins={[
-              <DatePanel  sort="date" />,
-              <TimePicker hideSeconds />
-            ]}
-
-            // mapDays={({ date, selectedDate, isSameDate }) => {
-            //   let props = {}
-            //   props.style = {
-            //     borderRadius: "3px"
-            //   }
-
-            //   if (isSameDate(date, selectedDate: DateObject)) props.style = {
-            //     ...props.style,
-            //     color: "black",
-            //     backgroundColor: "yellow",
-            //     fontWeight: "bold",
-            //     border: "1px solid #777"
-            //   }
-          
-            //   return props
-            // }}
-        />
-    </form>
+      <div className="Fullpage">
+        <section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section>
+        <section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section><section className="HistoryItem">
+          <div className="HistoryObject">
+            <div className="HistoryObjectTitle">
+              <h1 className="Titel"> Titel</h1>
+            </div>
+            <h2 className="PartyTourney">Party or Tourney </h2>
+            <h2 className="Date">Date 00-00-0000 </h2>
+            {/* <img className="GameImage" alt="Game Image" src={""} /> */}
+            <div className="GameImage"></div>
+            <h2 className="GameStats">Game: Type of game</h2>
+            <h2 className="GameStats">Winner: </h2>
+            <h2 className="GameStats">Tourney: </h2>
+          </div>
+        </section>
+      </div>
   )
 }
 

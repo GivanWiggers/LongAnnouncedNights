@@ -2,6 +2,7 @@ import { useLocation, useHistory } from 'react-router';
 import { VscAccount as AccountIcon } from 'react-icons/vsc';
 import { FiLogOut as LogOutIcon } from 'react-icons/fi';
 import { FaBell as BellIcon } from 'react-icons/fa'
+import { MdAddBox as AddIcon } from "react-icons/md"
 import "./NavbarStyles.scss";
 import { useContext } from 'react';
 
@@ -32,11 +33,12 @@ function NavbarRedirects() {
 function NavbarUserSection() {
         return (
         <section>
+            <AddIcon />
+            <AccountIcon />
             <div className="Name-Container">
                 <p>First name</p>
                 <p>Last name</p>
             </div>
-            <AccountIcon />
             <div className='Notification-Dropdown'>
                 <BellIcon />
                 <div className='Notification-Dropdown-Content'>
