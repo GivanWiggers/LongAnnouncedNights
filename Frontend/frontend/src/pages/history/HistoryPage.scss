@@ -16,9 +16,16 @@
 //     display: none;
 // }
 .Fullpage {
-    background: linear-gradient(80deg, #454545 40%, white 40%);
+    background: linear-gradient(95deg, #454545 35%, white 35%);
     width: 100%;
     height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.HistorySection {
+    height: 100%;
+    width: 100%;
 }
 
 .HistoryItem {
@@ -48,24 +55,25 @@
 
         .PartyTourney {
             margin-top: 0;
+            margin-bottom: 0;
             margin-left: 10%;
             width: 40%;
             float: left;
-            height: 10%;
+            height: 7%;
         }
 
         .Date {
             width: 40%;
             margin: auto;
-            height: 10%;
+            height: 7%;
             float: right;
         }
 
         .GameImage {
-            margin-top: 10%;
+            //margin-top: 10%;
             margin-left: 10%;
             width: 80%;
-            height: 30%;
+            height: 40%;
             background-color: black;
         }
 

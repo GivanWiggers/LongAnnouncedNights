@@ -1,14 +1,36 @@
 import './LoginPage.scss'
 import { useState } from "react"
-import DatePicker, { DateObject } from "react-multi-date-picker"
+import Logo from "../../assets/placeholder.png"
+import { FcGoogle } from "react-icons/fc";
+import { BsFacebook, BsGithub, BsGoogle } from "react-icons/bs";
 
 export default function LoginPage() {
-  const [values, setValues] = useState<DateObject[]>([])
 
   return (
     <div className="Fullpage">
-      <section>
-
+      <section className="LoginSection">
+        <div className="LAN">
+        <img src={Logo}></img>
+        <h1>Your online LAN-party planner!</h1>
+        </div>
+        <div className="LoginInfo">
+          <form>
+            <div>
+              <h2>Email:</h2>
+              <input placeholder="email"></input>
+            </div>
+            <div>
+              <h2>Password:</h2>
+              <input placeholder="password"></input>
+            </div>
+          </form>
+          <div className="Firebase">
+            <h2>Login with:</h2>
+            <BsGoogle className="Icons"/>
+            <BsFacebook className="Icons"/>
+            <BsGithub className="Icons"/>
+          </div>
+        </div>
       </section>
     </div>
 )

@@ -1,0 +1,64 @@
+.InfoSection {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    text-align: -webkit-center;
+
+    .Game {
+        margin: auto;
+        text-align: -webkit-center;
+
+        .GameImage {
+            margin-top: 5%;
+            //margin-left: 10%;
+            width: 80%;
+            height: 40%;
+            background-color: black;
+        }
+        input {
+            margin-top: 2%;
+            height: 25px;
+            width: 60%;
+        }
+    }
+
+    .Party {
+        margin: auto;
+        h1 {
+            margin-left: 10%;
+            text-align: -webkit-left;
+            color: #e2b514;
+        }
+
+        input {
+            margin-top: 0;
+            width: 80%;
+            height: 30px;
+            font-size: 30px;
+        }
+
+        .TourneyInfo {
+            margin: auto;
+            width: 80%;
+            margin-left: 10%;
+            .Half {
+                width: 50%;
+                margin-left: 0;
+                margin-right: 0;
+                float: left;
+            }
+        }
+    }
+}
+
+.InvitationSection {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    float: right;
+
+    h1 {
+        text-align: center;
+    }
+}
