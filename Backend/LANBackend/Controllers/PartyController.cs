@@ -25,5 +25,35 @@ namespace LANBackend.Controllers
 
             return Ok(party);
         }
+
+        [Route("readall"), HttpGet]
+        public IActionResult ReadAll(int user_id)
+        {
+            List<PartyDTO> parties = _partyContainer.GetAllPartiesUser(user_id);
+
+            return Ok(parties);
+        }
+
+
+        [HttpPost]
+        public IActionResult AddParty(PartyDTO party)
+        {
+            PartyDTO p = new PartyDTO() {PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(0,0,0), Dates = party.Dates};
+
+            _partyContainer.AddParty(p);
+
+            return Ok(p);
+        }
+
+        [HttpPut]
+        public IActionResult UpdateParty(PartyDTO party)
+        {
+            PartyDTO p = new PartyDTO() { PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(0,0,0), Dates = party.Dates };
+
+            _partyContainer.UpdateParty(p);
+
+            return Ok(p);
+        }
+
     }
 }

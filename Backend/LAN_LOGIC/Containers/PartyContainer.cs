@@ -25,6 +25,33 @@ namespace LAN_LOGIC.Containers
             return party;
         }
 
+        public List<PartyDTO> GetAllPartiesUser(int userId)
+        {
+            List<PartyDTO> parties = new List<PartyDTO>();
+            List<PartyDTO> partiesWithPassword = _partyDAL.GetAllPartiesUser(userId);
+
+            if (partiesWithPassword != null)
+            {
+                foreach(PartyDTO p in partiesWithPassword)
+                {
+                    parties.Add(SetPasswordsToNull(p));
+                }
+            }
+
+            return parties;
+        }
+
+        public void AddParty(PartyDTO party)
+        {
+            _partyDAL.AddParty(party);
+        }
+
+        public void UpdateParty(PartyDTO party)
+        {
+            _partyDAL.UpdateParty(party);
+        }
+
+
         private PartyDTO SetPasswordsToNull(PartyDTO party)
         {
             party.User.Password = null;
@@ -40,15 +67,18 @@ namespace LAN_LOGIC.Containers
                     usersInTeam.User.Password = null;
                 }
             }
-
-            foreach (DateDTO date in party.Dates)
+            if(party.Dates != null)
             {
-                foreach (AvailabilityDTO availability in date.UsersAvailable)
+                foreach (DateDTO date in party.Dates)
                 {
-                    availability.User.Password = null;
+                    foreach (AvailabilityDTO availability in date.UsersAvailable)
+                    {
+                        availability.User.Password = null;
+                    }
                 }
             }
             return party;
         }
+
     }
 }

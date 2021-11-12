@@ -71,6 +71,18 @@ namespace LAN_DAL
                 TeamID=2,
                 User = user4
             };
+            UsersInTeamDTO user1InTeam1Tourney2 = new UsersInTeamDTO()
+            {
+                UserInTeamID = 5,
+                TeamID = 3,
+                User = user1
+            };
+            UsersInTeamDTO user2InTeam2Tourney2 = new UsersInTeamDTO()
+            {
+                UserInTeamID = 6,
+                TeamID = 4,
+                User = user2
+            };
 
             TeamDTO team1 = new TeamDTO
             {
@@ -92,6 +104,24 @@ namespace LAN_DAL
                     user4InTeam2Tourney1
                 },
             };
+            TeamDTO team3 = new TeamDTO
+            {
+                TeamID = 3,
+                Name = "Team1Tourney2",
+                Players = new List<UsersInTeamDTO>()
+                {
+                    user1InTeam1Tourney2,
+                },
+            };
+            TeamDTO team4 = new TeamDTO
+            {
+                TeamID = 4,
+                Name = "Team2Tourney2",
+                Players = new List<UsersInTeamDTO>()
+                {
+                    user2InTeam2Tourney2,
+                },
+            };
             _Context.SaveChanges();
             TourneyDTO tourney1 = new TourneyDTO
             {
@@ -105,7 +135,18 @@ namespace LAN_DAL
                     team2
                 }
             };
-
+            TourneyDTO tourney2 = new TourneyDTO
+            {
+                TourneyID = 2,
+                User = user2,
+                Winner = team3,
+                TypeOf = TourneyStyleEnum.SixDouble,
+                Teams = new List<TeamDTO>()
+                {
+                    team3,
+                    team4
+                }
+            };
             AvailabilityDTO availabilityUser1Date1 = new AvailabilityDTO
             {
                 AvailabilityID = 1,
@@ -154,6 +195,18 @@ namespace LAN_DAL
                 Available = AvailabilityEnum.NotAvailable,
                 User = user4
             };
+            AvailabilityDTO availabilityUser1Date3 = new AvailabilityDTO
+            {
+                AvailabilityID = 9,
+                Available = AvailabilityEnum.Available,
+                User = user1
+            };
+            AvailabilityDTO availabilityUser2Date3 = new AvailabilityDTO
+            {
+                AvailabilityID = 10,
+                Available = AvailabilityEnum.Available,
+                User = user2
+            };
 
             DateDTO date1Party1 = new DateDTO
             {
@@ -181,6 +234,17 @@ namespace LAN_DAL
                 }
             };
 
+            DateDTO date1Party2 = new DateDTO
+            {
+                DateID = 3,
+                DateTime = new DateTime(2021, 11, 12, 19, 00, 00),
+                UsersAvailable = new List<AvailabilityDTO>()
+                {
+                    availabilityUser1Date3,
+                    availabilityUser2Date3
+                }
+            };
+
             PartyDTO partyDTO = new PartyDTO
             {
                 PartyID = 1,
@@ -195,15 +259,33 @@ namespace LAN_DAL
                     date2Party1
                 }
             };
-            
+
+            PartyDTO partyDTO2 = new PartyDTO
+            {
+                PartyID = 2,
+                User = user2,
+                Tourney = tourney2,
+                Title = "Second LAN Party",
+                Game = "League of Legends",
+                DateOfParty = date1Party2.DateTime,
+                Dates = new List<DateDTO>()
+                {
+                    date1Party2
+                }
+            };
+
             _Context.Teams.Add(team1);
             _Context.Teams.Add(team2);
+            _Context.Teams.Add(team3);
+            _Context.Teams.Add(team4);
             _Context.SaveChanges();
 
             _Context.Tourneys.Add(tourney1);
+            _Context.Tourneys.Add(tourney2);
             _Context.SaveChanges();
 
             _Context.Parties.Add(partyDTO);
+            _Context.Parties.Add(partyDTO2);
             _Context.SaveChanges();
 
         }
