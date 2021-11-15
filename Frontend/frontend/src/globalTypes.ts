@@ -33,5 +33,12 @@ export enum TourneyStyleEnum  {
     sixSingle,
     fourDouble,
     sixDouble,
+};
+
+export type Game ={
+    id: number;
+    slug: string;
+    name: string;
+    background_image: string;
 }
 

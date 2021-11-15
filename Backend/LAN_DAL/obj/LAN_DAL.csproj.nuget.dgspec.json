@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj": {}
+    "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj": {
+    "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj",
+        "projectUniqueName": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj",
         "projectName": "LAN_DAL",
-        "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj",
+        "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\LAN_DAL.csproj",
         "packagesPath": "C:\\Users\\gwigg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\obj\\",
+        "outputPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,11 +33,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
-                "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj"
+              "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
+                "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj"
               },
-              "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
-                "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj"
+              "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
+                "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
+    "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj",
+        "projectUniqueName": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj",
         "projectName": "LAN_DTO",
-        "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj",
+        "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj",
         "packagesPath": "C:\\Users\\gwigg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\obj\\",
+        "outputPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -115,8 +115,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
-                "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
+              "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
+                "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
               }
             }
           }
@@ -155,14 +155,14 @@
         }
       }
     },
-    "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
+    "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj",
+        "projectUniqueName": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj",
         "projectName": "LAN_Enums",
-        "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj",
+        "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj",
         "packagesPath": "C:\\Users\\gwigg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\obj\\",
+        "outputPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -214,14 +214,14 @@
         }
       }
     },
-    "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
+    "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj",
+        "projectUniqueName": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj",
         "projectName": "LAN_IDAL",
-        "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj",
+        "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\LAN_IDAL.csproj",
         "packagesPath": "C:\\Users\\gwigg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\obj\\",
+        "outputPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -243,8 +243,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
-                "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj"
+              "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj": {
+                "projectPath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO\\LAN_DTO.csproj"
               }
             }
           }
