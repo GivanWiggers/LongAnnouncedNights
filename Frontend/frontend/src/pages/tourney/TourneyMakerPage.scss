@@ -38,6 +38,25 @@
             font-size: 30px;
         }
 
+        select {
+            margin-top: 0;
+            width: 80%;
+            height: 34px;
+            font-size: 26px;
+
+            .Options :hover {
+                background-color: green;
+            }
+
+            option {
+                background-color: #e2b514;
+
+                &:hover {
+                    background-color: grey;
+                }
+            }
+        }
+
         .TourneyInfo {
             margin: auto;
             width: 80%;

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const instance = axios.create({
-    baseURL: "api.rawg.io/api/"
+const RAWGinstance = axios.create({
+    baseURL: "https://api.rawg.io/api/"
 });
 
-export default instance;
+export default RAWGinstance;

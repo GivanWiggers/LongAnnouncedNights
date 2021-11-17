@@ -10,33 +10,28 @@ export default function HistoryPage() {
     const [parties, setParties] = useState<Party[]>([]);
     const [game, setGame] = useState<Game>();
 
-    // async function getParty() {
-    //   let party = await PartyAPI.getParty(1)
-    //   console.log(party);
-
-    //   setParty(party);
-    // }
-
-    //called once at loading the page
-    // useEffect(() => {
-    //   getParty()
-    // }, [getParty])
-
+    //COMMENTED OM MIJ API KEY TE BESPAREN
     // async function getGame(gamestring: string) {
     //     gamestring = gamestring.replace(/\s/g, "-");
     //     let game = await RAWGAPI.getGame(gamestring);
     //     setGame(game);
+    //     console.log(game);
     // }
 
     async function getParties() {
         let parties = await PartyAPI.getParties(1);
+        // parties.forEach((element) => {
+        //     getGame(element.game);
+        //     element.gameImage = game?.background_image!;                                //DIT WERKT NIET EN IDK WHY
+        //     console.log(element);
+        // });
         setParties(parties);
     }
 
     //called once at loading the page
     useEffect(() => {
         getParties();
-    }, [getParties]);
+    }, []);
 
     return (
         <div className="Fullpage Fullpage-No-Stripe">

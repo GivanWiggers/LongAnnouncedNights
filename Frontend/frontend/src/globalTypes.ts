@@ -7,6 +7,7 @@ export type Party = {
     tourneystyle: TourneyStyleEnum;
     dateOfParty: Date;
     dates: Date[];
+    gameImage: string;
   };
 
 export type User = {

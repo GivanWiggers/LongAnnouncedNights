@@ -1,18 +1,19 @@
 import { AxiosResponse } from "axios";
 import { Game } from "../globalTypes";
-import instance from "./APIRAWGInstance";
+import RAWGinstance from "./APIRAWGInstance";
 
 export default class RAWGAPI{
-    static getGame = async(gameIdOrName : string) => {
-        const res: AxiosResponse<Game> = await instance.get(`/games/${gameIdOrName}?key=a2fcfd7ca8d8413fab61623dc7355475`)
 
+
+    //GET Game with GameId or Game Name
+    static getGame = async(gameIdOrName : string) => {
+        const res: AxiosResponse<Game> = await RAWGinstance.get(`/games/${gameIdOrName}?key=27e66b41a2df402e9311c5328210ea8e`)
         return res.data
     }
 
-    
+    //GET All Games
     static getGames = async() => {
-        const res: AxiosResponse<Game[]> = await instance.get(`/games?key=a2fcfd7ca8d8413fab61623dc7355475`)
-
+        const res: AxiosResponse<Game[]> = await RAWGinstance.get(`/games?key=27e66b41a2df402e9311c5328210ea8e`)
         return res.data
     }
 }
