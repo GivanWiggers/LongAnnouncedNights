@@ -1,6 +1,6 @@
 import "./LoginPage.scss";
 import { useState } from "react";
-import Logo from "../../assets/placeholder.png";
+import Logo from "../../assets/Logo_temp2.png";
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook, BsGithub, BsGoogle } from "react-icons/bs";
 
