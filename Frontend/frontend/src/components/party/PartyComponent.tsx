@@ -2,12 +2,12 @@ import { Party } from "../../globalTypes";
 import "./PartyComponent.scss";
 import GameImage from "../../assets/placeholder.png";
 
-interface ITableProps {
+interface IPartyComponentProps {
     party: Party;
 }
 
-export default function PartyComponent(props: ITableProps) {
-    console.log(props.party);
+export default function PartyComponent(props: IPartyComponentProps) {
+    //console.log(props.party);
     return (
         <section className="InfoSection">
             <div className="Game">

@@ -1,21 +1,43 @@
 import "./PartyMakerPage.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Calendar, DateObject } from "react-multi-date-picker";
 import DatePanel from "react-multi-date-picker/plugins/date_panel";
 import TimePicker from "react-multi-date-picker/plugins/time_picker";
 import "react-multi-date-picker/styles/colors/yellow.css";
 import "react-multi-date-picker/styles/layouts/mobile.css";
-import GameImage from "../../assets/placeholder.png";
 import PartyComponent from "../../components/party/PartyComponent";
 import { Party } from "../../globalTypes";
 
 export default function PartyMakerPage() {
     const [value, setValue] = useState<DateObject[]>([]);
+    const [time, setTime] = useState<Date>();
     const [party, setParty] = useState<Party>();
+    const [timeSetter, setTimeSetter] = useState<Date>(new Date(2022, 12, 13, 19, 30));
 
-    console.log(value);
+    //console.log(time?.getHours(), time?.getMinutes());
 
     console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
+
+    function SetTimeSetterHoursAndMinutes(hours: number, minutes: number) {
+        if (hours && minutes) {
+            setTimeSetter(new Date(0, 0, 0, hours, minutes));
+            //console.log(timeSetter.toLocaleString());
+            SetAllTimes(timeSetter);
+        }
+    }
+
+    function SetAllTimes(time: Date) {
+        if (time) {
+            setTime(time);
+            value.forEach((element) => {
+                element.setHour(time.getHours());
+                element.setMinute(time.getMinutes());
+            });
+        }
+    }
+    useEffect(() => {
+        SetAllTimes(timeSetter);
+    }, [SetTimeSetterHoursAndMinutes]);
 
     return (
         <div className="Fullpage">
@@ -87,6 +109,53 @@ export default function PartyMakerPage() {
                         //   return props
                         // }}
                     />
+                    <form>
+                        <div className="setDateDiv">
+                            <h1 className="SetDate"> Set Time for all dates:</h1>
+                            <input
+                                type="time"
+                                onChange={(e) =>
+                                    SetTimeSetterHoursAndMinutes(
+                                        (e.target.valueAsDate?.getHours() as number) - 1,
+                                        e.target.valueAsDate?.getMinutes() as number
+                                    )
+                                }
+                            />
+                            <form
+                                onClick={() =>
+                                    SetTimeSetterHoursAndMinutes(timeSetter.getHours(), timeSetter.getMinutes())
+                                }
+                            >
+                                {" "}
+                                CLICK ON THIS{" "}
+                            </form>
+                        </div>
+                        {/* <button onClick={() => SetAllTimes(timeSetter)}>CLICK ME!</button> */}
+                    </form>
+
+                    <div className="Dates">
+                        {value
+                            .sort(
+                                (b, a) =>
+                                    new Date(b.year, b.month.number - 1, b.day).getTime() -
+                                    new Date(a.year, a.month.number - 1, a.day).getTime()
+                            )
+                            .map((d) => {
+                                return (
+                                    <section className="DateItem" key={value.indexOf(d)}>
+                                        <h1>
+                                            {new Date(
+                                                d.year,
+                                                d.month.number - 1,
+                                                d.day,
+                                                d.hour,
+                                                d.minute
+                                            ).toLocaleString()}
+                                        </h1>
+                                    </section>
+                                );
+                            })}
+                    </div>
                 </form>
             </section>
         </div>
