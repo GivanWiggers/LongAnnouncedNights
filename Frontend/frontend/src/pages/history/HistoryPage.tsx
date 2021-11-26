@@ -15,7 +15,7 @@ export default function HistoryPage() {
         gamestring = gamestring.replace(/\s/g, "-");
         let game = await RAWGAPI.getGame(gamestring);
         let game1 = setGame(game);
-        console.log(game.background_image);
+        console.log(game);
     }
 
     async function getParties() {

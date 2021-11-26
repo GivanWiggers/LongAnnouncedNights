@@ -19,7 +19,7 @@ export default function PartyComponent(props: ITourneyComponentProps) {
                     <div>
                         <h1>
                             <GiTrophyCup color="gold" />
-                            {props.tourney.winner.name}
+                            {"         " + props.tourney.winner.name + "         "}
                             <GiTrophyCup />
                         </h1>
                         <div className="Players">

@@ -113,12 +113,12 @@ export default function PartyMakerPage() {
                             <h1 className="SetDate"> Set Time for all dates:</h1>
                             <input
                                 type="time"
-                                onChange={(e) =>
-                                    SetTimeSetterHoursAndMinutes(
-                                        (e.target.valueAsDate?.getHours() as number) - 1,
-                                        e.target.valueAsDate?.getMinutes() as number
-                                    )
-                                }
+                                // onChange={(e) =>
+                                //     SetTimeSetterHoursAndMinutes(
+                                //         (e.target.valueAsDate?.getHours() as number) - 1,
+                                //         e.target.valueAsDate?.getMinutes() as number
+                                //     )
+                                // }
                             />
                             <form
                                 onClick={() =>
