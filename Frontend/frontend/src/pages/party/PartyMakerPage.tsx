@@ -7,10 +7,11 @@ import "react-multi-date-picker/styles/colors/yellow.css";
 import "react-multi-date-picker/styles/layouts/mobile.css";
 import PartyComponent from "../../components/party/PartyComponent";
 import { Party } from "../../globalTypes";
+import GameImage from "../../assets/placeholder.png";
 
 export default function PartyMakerPage() {
     const [value, setValue] = useState<DateObject[]>([]);
-    const [time, setTime] = useState<Date>();
+    //const [time, setTime] = useState<Date>();
     const [party, setParty] = useState<Party>();
     const [timeSetter, setTimeSetter] = useState<Date>(new Date(2022, 12, 13, 19, 30));
 
@@ -28,7 +29,7 @@ export default function PartyMakerPage() {
 
     function SetAllTimes(time: Date) {
         if (time) {
-            setTime(time);
+            //setTime(time);
             value.forEach((element) => {
                 element.setHour(time.getHours());
                 element.setMinute(time.getMinutes());
@@ -42,9 +43,7 @@ export default function PartyMakerPage() {
     return (
         <div className="Fullpage">
             <section className="InfoSection">
-                <PartyComponent party={party!} />
-
-                {/* <div className="Game">
+                <div className="Game">
                     <img className="GameImage" alt="Game Image" src={GameImage} />
                     <input placeholder="Select game"></input>
                 </div>
@@ -76,7 +75,7 @@ export default function PartyMakerPage() {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </section>
             <section className="CalenderSection">
                 <form>

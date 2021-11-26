@@ -54,17 +54,29 @@ namespace LAN_LOGIC.Containers
 
         private PartyDTO SetPasswordsToNull(PartyDTO party)
         {
-            party.User.Password = null;
-            party.Tourney.User.Password = null;
-            foreach (UsersInTeamDTO userInTeam in party.Tourney.Winner.Players)
+            if(party.User != null)
             {
-                userInTeam.User.Password = null;
+                party.User.Password = null;
             }
-            foreach (TeamDTO team in party.Tourney.Teams)
+            if(party.Tourney.User != null)
             {
-                foreach (UsersInTeamDTO usersInTeam in team.Players)
+                party.Tourney.User.Password = null;
+            }
+            if(party.Tourney.Winner != null)
+            {
+                foreach (UsersInTeamDTO userInTeam in party.Tourney.Winner.Players)
                 {
-                    usersInTeam.User.Password = null;
+                    userInTeam.User.Password = null;
+                }
+            }
+            if(party.Tourney.Teams != null)
+            {
+                foreach (TeamDTO team in party.Tourney.Teams)
+                {
+                    foreach (UsersInTeamDTO usersInTeam in team.Players)
+                    {
+                        usersInTeam.User.Password = null;
+                    }
                 }
             }
             if(party.Dates != null)

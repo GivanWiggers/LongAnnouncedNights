@@ -20,8 +20,13 @@ export type User = {
 export type Team = {
     teamID: number;
     name: string;
-    players: User[];
+    players: UserInTeam[];
 };
+
+export type UserInTeam = {
+    teamID: number;
+    user: User;
+}
 export type Tourney = {
     tourneyID: number;
     user: User;

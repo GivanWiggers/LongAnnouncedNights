@@ -11,19 +11,24 @@ export default function HistoryPage() {
     const [game, setGame] = useState<Game>();
 
     //COMMENTED OM MIJ API KEY TE BESPAREN
-    // async function getGame(gamestring: string) {
-    //     gamestring = gamestring.replace(/\s/g, "-");
-    //     let game = await RAWGAPI.getGame(gamestring);
-    //     setGame(game);
-    //     console.log(game);
-    // }
+    async function getGame(gamestring: string) {
+        gamestring = gamestring.replace(/\s/g, "-");
+        let game = await RAWGAPI.getGame(gamestring);
+        let game1 = setGame(game);
+        console.log(game.background_image);
+    }
 
     async function getParties() {
         let parties = await PartyAPI.getParties(1);
-        // parties.forEach((element) => {
+        parties.forEach((element) => {
+            getGame(element.game);
+            element.gameImage = game?.background_image as string; //DIT WERKT NIET EN IDK WHY
+            console.log(game?.background_image);
+        });
+        // parties.map((element) => {
         //     getGame(element.game);
-        //     element.gameImage = game?.background_image!;                                //DIT WERKT NIET EN IDK WHY
-        //     console.log(element);
+        //     element.gameImage = game?.background_image as string; //DIT WERKT NIET EN IDK WHY
+        //     console.log(element.gameImage);
         // });
         setParties(parties);
     }
@@ -37,7 +42,6 @@ export default function HistoryPage() {
         <div className="Fullpage Fullpage-No-Stripe">
             <section className="HistorySection">
                 {parties.map((party) => {
-                    // getGame(party.game);
                     return (
                         <section key={party.partyID} className="HistoryItem">
                             <div className="HistoryObject">
@@ -46,8 +50,8 @@ export default function HistoryPage() {
                                 </div>
                                 <h2 className="PartyTourney">{party ? "Party" : "Tourney"} </h2>
                                 <h2 className="Date">{new Date(party.dateOfParty).toDateString()}</h2>
-                                <img className="GameImage" alt="Game Image" src={GameImage} />{" "}
-                                {/* <img className="GameImage" alt="Game Image" src={game?.background_image} />{" "} */}
+                                {/* <img className="GameImage" alt="Game Image" src={GameImage} />{" "} */}
+                                <img className="GameImage" alt="Game Image" src={party?.gameImage} />{" "}
                                 {/* Nog API aan koppelen */}
                                 <h2 className="GameStats">Game: {party.game}</h2>
                                 <h2 className="GameStats">Winner: {party.tourney.winner.name} </h2>

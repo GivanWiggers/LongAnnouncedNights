@@ -4,6 +4,76 @@
     margin: auto;
     float: right;
 
+    .Winner {
+        // background-color: blue;
+        background-color: #454545;
+        border: black 1px dashed;
+        margin: auto;
+        margin-top: 10px;
+        width: 60%;
+        border-radius: 50px;
+
+        p {
+            color: white;
+            text-align: center;
+            margin-bottom: auto;
+        }
+        h1 {
+            color: gold;
+            text-align: center;
+            margin-top: auto;
+        }
+        .Players {
+            display: flex;
+
+            .PlayersWinner {
+                color: white;
+                margin-left: 10%;
+            }
+        }
+    }
+
+    .Teams {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 80%;
+        overflow-x: auto;
+        min-height: 6rem;
+        max-height: 8rem;
+        .TeamSection {
+            margin-right: 1%;
+            background-color: #454545;
+            //border: yellow 1px solid;
+            min-height: 6rem;
+            max-height: 8rem;
+            overflow-y: auto;
+
+            .TeamDiv {
+                margin: auto;
+
+                .TeamName {
+                    margin-left: 0;
+                    margin-bottom: 1px;
+                    color: white;
+                }
+                h3 {
+                    font-size: small;
+                    color: whitesmoke;
+                    margin: auto;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .Tourney {
+        width: 80%;
+        margin: auto;
+        h1 {
+            font-size: xx-large;
+        }
+    }
+
     h1 {
         text-align: center;
     }

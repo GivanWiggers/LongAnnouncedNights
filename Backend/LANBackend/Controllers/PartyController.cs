@@ -38,7 +38,7 @@ namespace LANBackend.Controllers
         [HttpPost]
         public IActionResult AddParty(PartyDTO party)
         {
-            PartyDTO p = new PartyDTO() {PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(0,0,0), Dates = party.Dates};
+            PartyDTO p = new PartyDTO() {PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(1,1,1), Dates = party.Dates};
 
             _partyContainer.AddParty(p);
 
@@ -48,7 +48,7 @@ namespace LANBackend.Controllers
         [HttpPut]
         public IActionResult UpdateParty(PartyDTO party)
         {
-            PartyDTO p = new PartyDTO() { PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(0,0,0), Dates = party.Dates };
+            PartyDTO p = new PartyDTO() { PartyID = party.PartyID, User = party.User, Tourney = party.Tourney, Title = party.Title, Game = party.Game, DateOfParty = new DateTime(1,1,1), Dates = party.Dates };
 
             _partyContainer.UpdateParty(p);
 
