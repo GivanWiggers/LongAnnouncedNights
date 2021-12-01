@@ -35,6 +35,7 @@ export type Tourney = {
     teams: Team[];
 };
 export enum TourneyStyleEnum  {
+    None,
     fourSingle,
     sixSingle,
     fourDouble,
@@ -48,3 +49,9 @@ export type Game ={
     background_image: string;
 }
 
+export type APIGames ={
+    count: number;
+    previous: string;
+    next: string;
+    results: Game[];
+}
