@@ -4,3 +4,16 @@
 
 /LongAnnouncedNights
 /002.testlog
+.vs/slnx.sqlite
+Backend/LANBackend/obj/Debug/net5.0/LANBackend.assets.cache
+Backend/LANBackend/obj/Debug/net5.0/LANBackend.csprojAssemblyReference.cache
+Backend/LAN_DAL/obj/Debug/netcoreapp3.1/LAN_DAL.assets.cache
+Backend/LAN_DAL/obj/Debug/netcoreapp3.1/LAN_DAL.csprojAssemblyReference.cache
+Backend/LAN_DTO/obj/Debug/netcoreapp3.1/LAN_DTO.csprojAssemblyReference.cache
+Backend/LAN_Enums/obj/Debug/netcoreapp3.1/LAN_Enums.csprojAssemblyReference.cache
+Backend/LAN_Enums/obj/Release/netcoreapp3.1/LAN_Enums.csprojAssemblyReference.cache
+Backend/LAN_IDAL/obj/Debug/netcoreapp3.1/LAN_IDAL.assets.cache
+Backend/LAN_IDAL/obj/Debug/netcoreapp3.1/LAN_IDAL.csprojAssemblyReference.cache
+Backend/LAN_ILOGIC/obj/Debug/netcoreapp3.1/LAN_ILOGIC.csprojAssemblyReference.cache
+Backend/LAN_LOGIC/obj/Debug/netcoreapp3.1/LAN_LOGIC.csprojAssemblyReference.cache
+azure-pipelines.yml
