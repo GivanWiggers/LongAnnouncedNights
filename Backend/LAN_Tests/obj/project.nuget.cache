@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PJlDe39vj22NHQ4fKClo59PGRMDaOYo/1X0wyL6E+fvvN53znw+Vezypkvi6VBtJVYi+ROgSahW25fAS2oqCTA==",
+  "dgSpecHash": "STsfgZ0aLW03q6u8obm6fOZVDua1W3bIeyylS76YJs6EP1+qpyQVgRqOe0lFYISf5RaRZKjTj2ahFr740Js6KA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Tests\\LAN_Tests.csproj",
+  "projectFilePath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Tests\\LAN_Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gwigg\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\gwigg\\.nuget\\packages\\dotnetenv\\2.1.1\\dotnetenv.2.1.1.nupkg.sha512",
