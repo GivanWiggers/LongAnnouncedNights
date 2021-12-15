@@ -3,3 +3,12 @@
 ################################################################################
 
 /Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.g.props
+/Backend/LAN_Tests/obj/project.nuget.cache
+/Backend/LAN_Tests/obj/project.assets.json
+/Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.g.targets
+/Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.dgspec.json
+/Backend/LAN_Tests/obj
+/Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.GeneratedMSBuildEditorConfig.editorconfig
+/Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.AssemblyInfoInputs.cache
+/Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.AssemblyInfo.cs
+/Backend/LAN_IDAL/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
