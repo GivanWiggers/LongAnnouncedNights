@@ -105,7 +105,7 @@ namespace LAN_DAL
                 },
             };
             TeamDTO team3 = new TeamDTO
-            {
+            { 
                 TeamID = 3,
                 Name = "Team1Tourney2",
                 Players = new List<UsersInTeamDTO>()
