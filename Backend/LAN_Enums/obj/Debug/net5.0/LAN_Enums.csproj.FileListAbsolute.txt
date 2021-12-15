@@ -1,0 +1,12 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\net5.0\LAN_Enums.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\net5.0\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\net5.0\ref\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\bin\Debug\net5.0\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\ref\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_Enums\obj\Debug\net5.0\LAN_Enums.pdb

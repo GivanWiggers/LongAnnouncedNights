@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -13,7 +13,7 @@
       },
       "LAN_DTO/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_Enums": "1.0.0",
           "Newtonsoft.Json": "13.0.1"
@@ -27,7 +27,7 @@
       },
       "LAN_Enums/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/LAN_Enums.dll": {}
         },
@@ -37,7 +37,7 @@
       },
       "LAN_IDAL/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_DTO": "1.0.0"
         },
@@ -50,7 +50,7 @@
       },
       "LAN_ILOGIC/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_DTO": "1.0.0",
           "LAN_Enums": "1.0.0"
@@ -114,7 +114,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "LAN_Enums >= 1.0.0",
       "LAN_IDAL >= 1.0.0",
       "LAN_ILOGIC >= 1.0.0"
@@ -144,15 +144,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
             "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj": {
               "projectPath": "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums\\LAN_Enums.csproj"
@@ -173,8 +173,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "imports": [
           "net461",
           "net462",

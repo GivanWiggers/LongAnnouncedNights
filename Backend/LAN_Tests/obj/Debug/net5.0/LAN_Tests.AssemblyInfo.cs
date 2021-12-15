@@ -11,13 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LANBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LANBackend", "LANBackend.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL", "LAN_DAL.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO", "LAN_DTO.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_Enums, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums", "LAN_Enums.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_IDAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL", "LAN_IDAL.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_ILOGIC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC", "LAN_ILOGIC.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_LOGIC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\Source\\Repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC", "LAN_LOGIC.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LANBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LANBackend", "LANBackend.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DAL", "LAN_DAL.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_DTO", "LAN_DTO.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_Enums, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_Enums", "LAN_Enums.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_IDAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_IDAL", "LAN_IDAL.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_ILOGIC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_ILOGIC", "LAN_ILOGIC.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("LAN_LOGIC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\gwigg\\source\\repos\\GivanWiggers\\LongAnnouncedNights\\Backend\\LAN_LOGIC", "LAN_LOGIC.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LAN_Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
