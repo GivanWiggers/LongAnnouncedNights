@@ -12,7 +12,7 @@ export default function PartyPage() {
     async function getParty() {
         const party = await PartyAPI.getParty(1);
         const string = party.game.replace(/\s/g, "-");
-        //party.gameImage = await (await RAWGAPI.getGame(string)).background_image; API BESPAREN
+        //party.gameImage = await (await RAWGAPI.getGame(string)).background_image; //API BESPAREN
         setParty(party);
         console.log(party);
     }

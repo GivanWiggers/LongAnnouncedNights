@@ -108,7 +108,7 @@ export default function PartyMakerPage() {
 
     useEffect(() => {
         SetAllTimes(timeSetter!);
-        //getAllGames(); BEPERK API
+        //getAllGames(); //BEPERK API
         getGameImage();
     }, [SetTimeSetterHoursAndMinutes, setGame, setValue]);
 
