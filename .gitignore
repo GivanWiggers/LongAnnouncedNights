@@ -3,3 +3,9 @@
 ################################################################################
 
 /Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.g.props
+/Backend/LAN_Tests/obj/project.nuget.cache
+/Backend/LAN_Tests/obj/project.assets.json
+/Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.g.targets
+/Backend/LAN_Tests/obj/LAN_Tests.csproj.nuget.dgspec.json
+/Backend/LAN_LOGIC/obj/Debug/netcoreapp3.1l/LAN_LOGIC.assets.cache
+/Backend/LAN_LOGIC/obj/Debug/netcoreapp3.1l/LAN_LOGIC.csprojAssemblyReference.cache
