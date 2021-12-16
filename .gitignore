@@ -17,3 +17,13 @@ Backend/LAN_IDAL/obj/Debug/netcoreapp3.1/LAN_IDAL.csprojAssemblyReference.cache
 Backend/LAN_ILOGIC/obj/Debug/netcoreapp3.1/LAN_ILOGIC.csprojAssemblyReference.cache
 Backend/LAN_LOGIC/obj/Debug/netcoreapp3.1/LAN_LOGIC.csprojAssemblyReference.cache
 azure-pipelines.yml
+Backend/LANBackend/obj/Debug/net5.0/LANBackend.csprojAssemblyReference.cache
+Backend/LAN_Tests/obj/Debug/net5.0/LAN_Tests.csprojAssemblyReference.cache
+Backend/LAN_LOGIC/obj/Debug/net5.0/LAN_LOGIC.csprojAssemblyReference.cache
+Backend/LAN_ILOGIC/obj/Debug/net5.0/LAN_ILOGIC.csprojAssemblyReference.cache
+Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.csprojAssemblyReference.cache
+Backend/LAN_Enums/obj/Debug/net5.0/LAN_Enums.csprojAssemblyReference.cache
+Backend/LAN_DTO/obj/Debug/net5.0/LAN_DTO.csprojAssemblyReference.cache
+Backend/LAN_DAL/obj/Debug/net5.0/LAN_DAL.csprojAssemblyReference.cache
+Backend/.vs/LongAnnouncedNights/v16/.suo
+Backend/.vs/LongAnnouncedNights/DesignTimeBuild/.dtbcache.v2
