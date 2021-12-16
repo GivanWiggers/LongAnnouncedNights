@@ -27,3 +27,4 @@ Backend/LAN_DTO/obj/Debug/net5.0/LAN_DTO.csprojAssemblyReference.cache
 Backend/LAN_DAL/obj/Debug/net5.0/LAN_DAL.csprojAssemblyReference.cache
 Backend/.vs/LongAnnouncedNights/v16/.suo
 Backend/.vs/LongAnnouncedNights/DesignTimeBuild/.dtbcache.v2
+*.cache
