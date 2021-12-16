@@ -12,3 +12,7 @@
 /Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.AssemblyInfoInputs.cache
 /Backend/LAN_IDAL/obj/Debug/net5.0/LAN_IDAL.AssemblyInfo.cs
 /Backend/LAN_IDAL/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+*.cache
+Backend/.vs/LongAnnouncedNights/v16/.suo
+*.v2
+Backend/.vs/LongAnnouncedNights/v16/.suo
