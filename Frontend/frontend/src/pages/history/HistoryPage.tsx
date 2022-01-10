@@ -17,12 +17,13 @@ export default function HistoryPage() {
     // async function getGame(gamestring: string) {
     //     gamestring = gamestring.replace(/\s/g, "-");
     //     let game = await RAWGAPI.getGame(gamestring);
-    //     //setGame(game);
+    //     setGame(game);
     //     if (games.includes(game)) {
     //     } else {
     //         games.push(game);
     //     }
-    //     //console.log(game);
+    //     console.log(game);
+    //     // console.log(game);
     // }
 
     console.log(games);
@@ -30,7 +31,8 @@ export default function HistoryPage() {
     async function getParties() {
         let parties = await PartyAPI.getParties(1);
         parties.forEach((element) => {
-            //getGame(element.game);
+            //getGame(element.game);    BEPERK API
+            console.log(games);
             games.forEach((g) => {
                 if (g.name === element.game) {
                     element.gameImage = g.background_image;

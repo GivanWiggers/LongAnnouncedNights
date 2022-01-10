@@ -61,17 +61,17 @@ export default function PartyMakerPage() {
 
     const [party, setParty] = useState<Party>();
 
-    //console.log(time?.getHours(), time?.getMinutes());
-    //console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
-    //console.log(games);
-    //console.log(gamesString);
-    //console.log(gameIm);
-    //console.log(checkedSkipCon);
+    // console.log(time?.getHours(), time?.getMinutes());
+    // console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
+    // console.log(games);
+    // console.log(gamesString);
+    // console.log(gameIm);
+    // console.log(checkedSkipCon);
 
     function SetTimeSetterHoursAndMinutes(hours: number, minutes: number) {
         if (hours && minutes) {
             setTimeSetter(new Date(0, 0, 0, hours, minutes));
-            //console.log(timeSetter.toLocaleString());
+            console.log(timeSetter.toLocaleString());
             SetAllTimes(timeSetter);
         }
     }
