@@ -1,0 +1,17 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_ILOGIC.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_ILOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\ref\LAN_ILOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_ILOGIC.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_DTO.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\bin\Debug\net5.0\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.csproj.CopyComplete
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\ref\LAN_ILOGIC.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_ILOGIC\obj\Debug\net5.0\LAN_ILOGIC.pdb

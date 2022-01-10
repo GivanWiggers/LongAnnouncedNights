@@ -1,0 +1,24 @@
+// For most css Look in HistoryTable Scss
+
+.Invite-Table {
+    width: 100%;
+    height: 70vh;
+    border-spacing: 0;
+
+    .row {
+        width: 95%;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-bottom: 1px solid black;
+        p {
+            &:first-child {
+                padding-left: 1rem;
+            }
+
+            &:last-child {
+                text-align: end;
+                padding-right: 1rem;
+            }
+        }
+    }
+}

@@ -25,30 +25,72 @@ namespace LAN_LOGIC.Containers
             return party;
         }
 
-        private PartyDTO SetPasswordsToNull(PartyDTO party)
+        public List<PartyDTO> GetAllPartiesUser(int userId)
         {
-            party.User.Password = null;
-            party.Tourney.User.Password = null;
-            foreach (UsersInTeamDTO userInTeam in party.Tourney.Winner.Players)
+            List<PartyDTO> parties = new List<PartyDTO>();
+            List<PartyDTO> partiesWithPassword = _partyDAL.GetAllPartiesUser(userId);
+
+            if (partiesWithPassword != null)
             {
-                userInTeam.User.Password = null;
-            }
-            foreach (TeamDTO team in party.Tourney.Teams)
-            {
-                foreach (UsersInTeamDTO usersInTeam in team.Players)
+                foreach(PartyDTO p in partiesWithPassword)
                 {
-                    usersInTeam.User.Password = null;
+                    parties.Add(SetPasswordsToNull(p));
                 }
             }
 
-            foreach (DateDTO date in party.Dates)
+            return parties;
+        }
+
+        public void AddParty(PartyDTO party)
+        {
+            _partyDAL.AddParty(party);
+        }
+
+        public void UpdateParty(PartyDTO party)
+        {
+            _partyDAL.UpdateParty(party);
+        }
+
+
+        private PartyDTO SetPasswordsToNull(PartyDTO party)
+        {
+            if(party.User != null)
             {
-                foreach (AvailabilityDTO availability in date.UsersAvailable)
+                party.User.Password = null;
+            }
+            if(party.Tourney.User != null)
+            {
+                party.Tourney.User.Password = null;
+            }
+            if(party.Tourney.Winner != null)
+            {
+                foreach (UsersInTeamDTO userInTeam in party.Tourney.Winner.Players)
                 {
-                    availability.User.Password = null;
+                    userInTeam.User.Password = null;
+                }
+            }
+            if(party.Tourney.Teams != null)
+            {
+                foreach (TeamDTO team in party.Tourney.Teams)
+                {
+                    foreach (UsersInTeamDTO usersInTeam in team.Players)
+                    {
+                        usersInTeam.User.Password = null;
+                    }
+                }
+            }
+            if(party.Dates != null)
+            {
+                foreach (DateDTO date in party.Dates)
+                {
+                    foreach (AvailabilityDTO availability in date.UsersAvailable)
+                    {
+                        availability.User.Password = null;
+                    }
                 }
             }
             return party;
         }
+
     }
 }

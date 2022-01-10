@@ -1,0 +1,15 @@
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\LAN_DTO.deps.json
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\ref\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\LAN_DTO.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\LAN_Enums.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\bin\Debug\net5.0\LAN_Enums.pdb
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.csprojAssemblyReference.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.AssemblyInfoInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.AssemblyInfo.cs
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.csproj.CoreCompileInputs.cache
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.csproj.CopyComplete
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\ref\LAN_DTO.dll
+C:\Users\gwigg\source\repos\GivanWiggers\LongAnnouncedNights\Backend\LAN_DTO\obj\Debug\net5.0\LAN_DTO.pdb

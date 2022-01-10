@@ -8,8 +8,8 @@ namespace LAN_ILOGIC.Models
     public interface IParty
     {
         public int PartyID { get; }
-        public int UserID { get; }
-        public int TourneyID { get; }
+        public IUser UserID { get; }
+        public ITourney TourneyID { get; }
         public string Title { get; }
         public string Game { get; }
         public TourneyStyleEnum Tourneystyle { get; }

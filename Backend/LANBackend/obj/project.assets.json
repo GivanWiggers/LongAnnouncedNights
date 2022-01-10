@@ -1828,7 +1828,7 @@
       },
       "LAN_DAL/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_DTO": "1.0.0",
           "LAN_IDAL": "1.0.0",
@@ -1844,7 +1844,7 @@
       },
       "LAN_DTO/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_Enums": "1.0.0",
           "Newtonsoft.Json": "13.0.1"
@@ -1858,7 +1858,7 @@
       },
       "LAN_Enums/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/LAN_Enums.dll": {}
         },
@@ -1868,7 +1868,7 @@
       },
       "LAN_IDAL/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_DTO": "1.0.0"
         },
@@ -1881,7 +1881,7 @@
       },
       "LAN_ILOGIC/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_DTO": "1.0.0",
           "LAN_Enums": "1.0.0"
@@ -1895,7 +1895,7 @@
       },
       "LAN_LOGIC/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "LAN_Enums": "1.0.0",
           "LAN_IDAL": "1.0.0",

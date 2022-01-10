@@ -21,12 +21,22 @@
             height: 25px;
             width: 60%;
         }
+        .css-1kty9di-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514 !important;
+        }
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-168o85v-MuiAutocomplete-root
+            .MuiOutlinedInput-root {
+            color: white !important;
+        }
+        .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514;
+        }
     }
 
     .Party {
         margin: auto;
         h1 {
-            margin-left: 10%;
+            //margin-left: 10%;
             text-align: -webkit-left;
             color: #e2b514;
         }
@@ -36,6 +46,7 @@
             width: 80%;
             height: 30px;
             font-size: 30px;
+            color: white;
         }
 
         .TourneyInfo {
@@ -46,8 +57,40 @@
                 width: 50%;
                 margin-left: 0;
                 margin-right: 0;
+                margin-top: 5%;
                 float: left;
             }
+        }
+        .SelectTourney {
+            //margin-left: 5%;
+            width: 100%;
+            //margin: auto;
+            //background-color: whitesmoke;
+            //width: 90%;
+            padding: -20%;
+
+            .InputLabel {
+                color: #e2b514;
+                margin: -1%;
+            }
+        }
+        .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514;
+        }
+        .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514;
+        }
+        .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+            color: #e2b514;
+        }
+        .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+            color: white;
+        }
+        .css-1kty9di-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514;
+        }
+        .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+            color: #e2b514;
         }
     }
 }
@@ -57,8 +100,42 @@
     height: 100%;
     margin: auto;
     float: right;
+    overflow: auto;
 
     h1 {
         text-align: center;
+    }
+    .setDateDiv {
+        display: flex;
+        width: 70%;
+        margin: auto;
+
+        .SetDate {
+            width: 50%;
+            float: left;
+        }
+
+        input {
+            margin: auto;
+        }
+    }
+
+    .Dates {
+        width: 80%;
+        margin: auto;
+        .DateItem {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            border: white 1px solid;
+            background-color: #e2b514;
+            text-align: center;
+            display: flex;
+
+            h1 {
+                float: left;
+                width: 30%;
+            }
+        }
     }
 }

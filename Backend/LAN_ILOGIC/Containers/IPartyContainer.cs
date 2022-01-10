@@ -8,5 +8,8 @@ namespace LAN_ILOGIC.Containers
     public interface IPartyContainer
     {
         public PartyDTO GetParty(int id);
+        public List<PartyDTO> GetAllPartiesUser(int userId);
+        public void AddParty(PartyDTO party);
+        public void UpdateParty(PartyDTO party);
     }
 }
