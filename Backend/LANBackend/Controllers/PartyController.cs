@@ -23,7 +23,7 @@ namespace LANBackend.Controllers
         {
             PartyDTO party = _partyContainer.GetParty(party_id);
 
-            return Ok(party); 
+            return Ok(party);
         }
 
         [Route("readall"), HttpGet]
