@@ -40,7 +40,6 @@ steps:
     projects: 'Backend/LANBackend.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
--task: LAN_Tests.csproj
 - task: DotNetCoreCLI@2
   inputs:
     command: test

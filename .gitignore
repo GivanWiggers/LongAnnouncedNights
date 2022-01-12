@@ -44,4 +44,6 @@ Backend/.vs/LongAnnouncedNights/DesignTimeBuild/.dtbcache.v2
 Backend/.vs/LongAnnouncedNights/v16/.suo
 *.v2
 Backend/.vs/LongAnnouncedNights/v16/.suo
+002.testlog
+*.testlog
 >>>>>>> main
