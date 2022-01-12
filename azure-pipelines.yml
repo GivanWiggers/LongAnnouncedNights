@@ -33,12 +33,12 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'  
 
-- task: DotNetCoreCLI@2
-  displayName: Build
-  inputs:
-    command: build
-    projects: 'Backend/LANBackend.csproj'
-    arguments: '--configuration $(buildConfiguration)'
+# - task: DotNetCoreCLI@2
+  # displayName: Build
+  # inputs:
+    # command: build
+    # projects: 'Backend/LANBackend.csproj'
+    # arguments: '--configuration $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   inputs:
