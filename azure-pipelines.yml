@@ -33,15 +33,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'  
 
-# - task: DotNetCoreCLI@2
-  # displayName: Build
-  # inputs:
-    # command: build
-    # projects: 'Backend/LANBackend.csproj'
-    # arguments: '--configuration $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: test
-    projects: 'Backend/LAN_Tests/LAN_Tests.csproj'
+    projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
