@@ -95,6 +95,7 @@ namespace LAN_Tests
             }
             catch (Exception ex)
             {
+                ex.ToString();
             }
         }
 
