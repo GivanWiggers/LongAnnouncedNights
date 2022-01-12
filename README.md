@@ -26,3 +26,9 @@ docker-compose up -d
 ```
 
 Hiermee starten in een docker container alle docker images voor dit project.
+
+Hierna is het enige dat je nog moet doen de frontend runnen. Dit doe je door te gaan naar path: LongAnnouncedNights/Frontend/frontend hier open je weer het commandprompt en voor je in:
+```
+npm start
+```
+Zodra de frontend is gestart zal deze openen in je standaardbrowaser en ben je klaar voor gebruik.
