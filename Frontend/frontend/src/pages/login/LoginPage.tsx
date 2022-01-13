@@ -6,7 +6,7 @@ import { BsFacebook, BsGithub, BsGoogle } from "react-icons/bs";
 
 export default function LoginPage() {
     return (
-        <div className="Fullpage">
+        <div className="Fullpage Fullpage-Low-Stripe">
             <section className="LoginSection">
                 <div className="LAN">
                     <img src={Logo}></img>

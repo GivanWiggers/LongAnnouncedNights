@@ -47,10 +47,10 @@ export default function PartyComponent(props: IPartyComponentProps) {
             <div className="Party">
                 <h1>Party Title:</h1>
                 {/* <input></input> */}
-                <TextField id="standard-basic" label={props.party.title} variant="standard" />
+                <TextField id="standard-basic" label={props.party.title} variant="standard" disabled />
                 <h1>Tourney:</h1>
                 <div className="SelectTourney">
-                    <TextField id="standard-basic" label={props.party.tourney.typeof} variant="standard" />
+                    <TextField id="standard-basic" label={props.party.tourney.typeof} variant="standard" disabled />
                 </div>
                 <div className="TourneyInfo">
                     <div className="Half">

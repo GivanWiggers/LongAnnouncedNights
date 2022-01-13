@@ -30,7 +30,7 @@ services:
     container_name: LAN-Backend
     image: ${Docker_REGISRTY-} lanbackend
     build:
-      context: LANBackend/LANBackend
+      context: Backend/LANBackend
       dockerfile: Dockerfile
       
     environment:

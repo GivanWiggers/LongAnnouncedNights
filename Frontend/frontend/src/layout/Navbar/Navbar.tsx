@@ -24,14 +24,14 @@ function NavbarRedirects() {
         <section>
             <img alt="LAN" src={LANLogo} onClick={() => history.push("menu")} />
             {/* <AddIcon className="AddButton" onClick={() => history.push("menu")}/> */}
-            <p className={pathname === "/party" ? "bold-text" : ""} onClick={() => history.push("party")}>
-                Party
-            </p>
             <p className={pathname === "/login" ? "bold-text" : ""} onClick={() => history.push("login")}>
                 Login
             </p>
             <p className={pathname === "/history" ? "bold-text" : ""} onClick={() => history.push("history")}>
                 History
+            </p>
+            <p className={pathname === "/party" ? "bold-text" : ""} onClick={() => history.push("party")}>
+                Party
             </p>
             {/* <p className={pathname === "/menu" ? "bold-text" : ""} onClick={() => history.push("menu")}>Menu</p> */}
         </section>
@@ -45,8 +45,8 @@ function NavbarUserSection() {
             <AddIcon onClick={() => history.push("menu")} />
             <AccountIcon />
             <div className="Name-Container">
-                <p>First name</p>
-                <p>Last name</p>
+                <p>User1</p>
+                {/* <p>Last name</p> */}
             </div>
             {/* <div className='Notification-Dropdown'>
                 <BellIcon />

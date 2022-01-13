@@ -4,6 +4,7 @@ import GameImage from "../../assets/placeholder.png";
 import PartyAPI from "../../api/PartyAPI";
 import RAWGAPI from "../../api/RAWGAPI";
 import { Game, Party } from "../../globalTypes";
+import { useHistory } from "react-router-dom";
 
 export default function HistoryPage() {
     const [party, setParty] = useState<Party>();
@@ -13,25 +14,26 @@ export default function HistoryPage() {
     const [games, setGames] = useState<Game[]>([]);
     const [gameImages, setImages] = useState<string[]>([]);
 
+    const history = useHistory();
     //COMMENTED OM MIJ API KEY TE BESPAREN
-    // async function getGame(gamestring: string) {
-    //     gamestring = gamestring.replace(/\s/g, "-");
-    //     let game = await RAWGAPI.getGame(gamestring);
-    //     setGame(game);
-    //     if (games.includes(game)) {
-    //     } else {
-    //         games.push(game);
-    //     }
-    //     console.log(game);
-    //     // console.log(game);
-    // }
+    async function getGame(gamestring: string) {
+        gamestring = gamestring.replace(/\s/g, "-");
+        let game = await RAWGAPI.getGame(gamestring);
+        setGame(game);
+        if (games.includes(game)) {
+        } else {
+            games.push(game);
+        }
+        console.log(game);
+        //console.log(game);
+    }
 
     console.log(games);
 
     async function getParties() {
         let parties = await PartyAPI.getParties(1);
         parties.forEach((element) => {
-            //getGame(element.game);    BEPERK API
+            getGame(element.game); // BEPERK API
             console.log(games);
             games.forEach((g) => {
                 if (g.name === element.game) {
@@ -50,12 +52,12 @@ export default function HistoryPage() {
     }, []);
 
     return (
-        <div className="Fullpage Fullpage-No-Stripe">
+        <div className="Fullpage Fullpage-High-Stripe">
             <section className="HistorySection">
                 {parties.map((party) => {
                     return (
                         <section key={party.partyID} className="HistoryItem">
-                            <div className="HistoryObject">
+                            <div className="HistoryObject" onClick={() => history.push("party")}>
                                 <div className="HistoryObjectTitle">
                                     <h1 className="Titel">{party.title}</h1>
                                 </div>

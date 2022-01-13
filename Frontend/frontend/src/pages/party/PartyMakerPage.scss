@@ -62,7 +62,7 @@
             }
         }
         .SelectTourney {
-            //margin-left: 5%;
+            margin-left: 5%;
             width: 100%;
             //margin: auto;
             //background-color: whitesmoke;
@@ -101,7 +101,8 @@
     margin: auto;
     float: right;
     overflow: auto;
-
+    transition: 2s ease;
+    display: relative;
     h1 {
         text-align: center;
     }
@@ -137,5 +138,31 @@
                 width: 30%;
             }
         }
+    }
+    .Clicked:hover CalenderSection {
+        width: 1px;
+    }
+    .Clicked:hover CalenderSectionHidden {
+        display: relative;
+    }
+
+    .FriendsTitle {
+        border-top: black 1px solid;
+        padding-top: 10px;
+        width: 80%;
+        margin: auto;
+    }
+}
+.CalenderSectionHidden {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    float: right;
+    overflow: auto;
+    display: none;
+    transition: 2s ease;
+
+    h1 {
+        text-align: center;
     }
 }

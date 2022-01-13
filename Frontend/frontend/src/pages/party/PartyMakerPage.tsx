@@ -6,7 +6,7 @@ import TimePicker from "react-multi-date-picker/plugins/time_picker";
 import "react-multi-date-picker/styles/colors/yellow.css";
 import "react-multi-date-picker/styles/layouts/mobile.css";
 import PartyComponent from "../../components/party/PartyComponent";
-import { Game, Party } from "../../globalTypes";
+import { Game, Party, User } from "../../globalTypes";
 import GameImage from "../../assets/placeholder.png";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
@@ -21,6 +21,7 @@ import {
     Select,
     SelectChangeEvent,
 } from "@mui/material";
+import InviteTable from "../../components/invitations/InviteTable";
 
 export default function PartyMakerPage() {
     //Game AutoComplete
@@ -61,6 +62,13 @@ export default function PartyMakerPage() {
 
     const [party, setParty] = useState<Party>();
 
+    let user1: User = {
+        id: 66,
+        name: "Bob Bericht",
+        email: "b.bericht@gmail.com",
+        password: "",
+    };
+
     // console.log(time?.getHours(), time?.getMinutes());
     // console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
     // console.log(games);
@@ -87,15 +95,15 @@ export default function PartyMakerPage() {
     }
 
     //BEPERK API
-    // async function getAllGames() {
-    //     if (games == null) {
-    //         console.log("it read again");
-    //         let gameslist = await RAWGAPI.getGames();
-    //         setGames(gameslist.results);
-    //         var result = gameslist.results.map((game) => game.name);
-    //         setGamesString(result);
-    //     }
-    // }
+    async function getAllGames() {
+        if (games == null) {
+            console.log("it read again");
+            let gameslist = await RAWGAPI.getGames();
+            setGames(gameslist.results);
+            var result = gameslist.results.map((game) => game.name);
+            setGamesString(result);
+        }
+    }
 
     async function getGameImage() {
         console.log("searching for game Image");
@@ -108,7 +116,7 @@ export default function PartyMakerPage() {
 
     useEffect(() => {
         SetAllTimes(timeSetter!);
-        //getAllGames(); //BEPERK API
+        getAllGames(); //BEPERK API
         getGameImage();
     }, [SetTimeSetterHoursAndMinutes, setGame, setValue]);
 
@@ -160,9 +168,10 @@ export default function PartyMakerPage() {
                                 onChange={handleChangeSelect}
                             >
                                 <MenuItem value={0}>None</MenuItem>
-                                <MenuItem value={1}>Ten</MenuItem>
-                                <MenuItem value={2}>Twenty</MenuItem>
-                                <MenuItem value={3}>Thirty</MenuItem>
+                                <MenuItem value={1}>fourSingle</MenuItem>
+                                <MenuItem value={2}>sixSingle</MenuItem>
+                                <MenuItem value={3}>fourDouble</MenuItem>
+                                <MenuItem value={4}>sixDouble</MenuItem>
                             </Select>
                         </FormControl>
                     </div>
@@ -320,6 +329,9 @@ export default function PartyMakerPage() {
                                 );
                             })}
                     </div>
+
+                    <h1 className="FriendsTitle"> Invite your friends to join! </h1>
+                    <InviteTable users={user1} />
                 </form>
             </section>
         </div>

@@ -22,7 +22,18 @@
     overflow: auto;
 
     &-No-Stripe {
-        background: white 35%;
+        background: #454545 35%;
+    }
+
+    &-Reverse-Stripe {
+        background: linear-gradient(275deg, #454545 35%, white 35%);
+    }
+
+    &-High-Stripe {
+        background: linear-gradient(185deg, #454545 35%, white 35%);
+    }
+    &-Low-Stripe {
+        background: linear-gradient(365deg, #454545 35%, white 35%);
     }
 }
 

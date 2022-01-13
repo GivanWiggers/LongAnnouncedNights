@@ -63,6 +63,7 @@ export default function PartyComponent(props: ITourneyComponentProps) {
             </div>
             <section className="Tourney">
                 <h1>Tourney:</h1>
+                <img src="https://challonge.com/mxmk68w5.svg"></img>
             </section>
         </section>
     );
