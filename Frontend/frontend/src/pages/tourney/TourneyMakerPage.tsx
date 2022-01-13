@@ -68,8 +68,8 @@ export default function TourneyMakerPage() {
 
     let user1: User = {
         id: 66,
-        name: "Bob Bericht",
-        email: "b.bericht@gmail.com",
+        name: "User2",
+        email: "user2@gmail.com",
         password: "",
     };
 

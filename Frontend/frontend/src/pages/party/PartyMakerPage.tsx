@@ -57,24 +57,22 @@ export default function PartyMakerPage() {
     };
     //Dates Calender
     const [value, setValue] = useState<DateObject[]>([]);
-    //const [time, setTime] = useState<Date>();
     const [timeSetter, setTimeSetter] = useState<Date>(new Date());
 
     const [party, setParty] = useState<Party>();
 
     let user1: User = {
         id: 66,
-        name: "Bob Bericht",
-        email: "b.bericht@gmail.com",
+        name: "User2",
+        email: "user2@gmail.com",
         password: "",
     };
 
-    // console.log(time?.getHours(), time?.getMinutes());
-    // console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
-    // console.log(games);
-    // console.log(gamesString);
-    // console.log(gameIm);
-    // console.log(checkedSkipCon);
+    console.log(value.map((v) => new Date(v.year, v.month.number - 1, v.day, v.hour, v.minute).toLocaleString()));
+    //console.log(games);
+    //console.log(gamesString);
+    //console.log(gameIm);
+    //console.log(checkedSkipCon);
 
     function SetTimeSetterHoursAndMinutes(hours: number, minutes: number) {
         if (hours && minutes) {
@@ -263,8 +261,9 @@ export default function PartyMakerPage() {
                         className="yellow rmdp-mobile"
                         value={value}
                         onChange={(dates: DateObject[]) => setValue(dates)}
-                        plugins={[<DatePanel sort="date" />, <TimePicker hideSeconds />]}
-
+                        plugins={[
+                            <DatePanel sort="date" />, //, <TimePicker hideSeconds />]}
+                        ]}
                         // mapDays={({ date, selectedDate, isSameDate }) => {
                         //   let props = {}
                         //   props.style = {
@@ -295,12 +294,13 @@ export default function PartyMakerPage() {
                                 }
                             />
                             <form
-                            // onClick={() =>
-                            //     SetTimeSetterHoursAndMinutes(timeSetter!.getHours(), timeSetter!.getMinutes())
-                            // }
+                                className="AllTimeSetter"
+                                onClick={() =>
+                                    SetTimeSetterHoursAndMinutes(timeSetter!.getHours(), timeSetter!.getMinutes())
+                                }
                             >
                                 {" "}
-                                CLICK ON THIS{" "}
+                                Set All Times{" "}
                             </form>
                         </div>
                         {/* <button onClick={() => SetAllTimes(timeSetter)}>CLICK ME!</button> */}

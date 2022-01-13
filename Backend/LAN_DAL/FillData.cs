@@ -83,6 +83,24 @@ namespace LAN_DAL
                 TeamID = 4,
                 User = user2
             };
+            UsersInTeamDTO user1InTeam1Tourney3 = new UsersInTeamDTO()
+            {
+                UserInTeamID = 7,
+                TeamID = 5,
+                User = user1
+            };
+            UsersInTeamDTO user1InTeam1Tourney4 = new UsersInTeamDTO()
+            {
+                UserInTeamID = 8,
+                TeamID = 6,
+                User = user1
+            };
+            UsersInTeamDTO user1InTeam1Tourney5 = new UsersInTeamDTO()
+            {
+                UserInTeamID = 9,
+                TeamID = 7,
+                User = user1
+            };
 
             TeamDTO team1 = new TeamDTO
             {
@@ -122,7 +140,35 @@ namespace LAN_DAL
                     user2InTeam2Tourney2,
                 },
             };
+            TeamDTO team5 = new TeamDTO
+            {
+                TeamID = 5,
+                Name = "Team1Tourney3",
+                Players = new List<UsersInTeamDTO>()
+                {
+                    user1InTeam1Tourney3,
+                },
+            };
+            TeamDTO team6 = new TeamDTO
+            {
+                TeamID = 6,
+                Name = "Team1Tourney4",
+                Players = new List<UsersInTeamDTO>()
+                {
+                    user1InTeam1Tourney4
+                },
+            };
+            TeamDTO team7 = new TeamDTO
+            {
+                TeamID = 7,
+                Name = "Team1Tourney5",
+                Players = new List<UsersInTeamDTO>()
+                {
+                    user1InTeam1Tourney5
+                },
+            };
             _Context.SaveChanges();
+
             TourneyDTO tourney1 = new TourneyDTO
             {
                 TourneyID = 1,
@@ -147,6 +193,41 @@ namespace LAN_DAL
                     team4
                 }
             };
+            TourneyDTO tourney3 = new TourneyDTO
+            {
+                TourneyID = 3,
+                User = user1,
+                Winner = team5,
+                TypeOf = TourneyStyleEnum.SixDouble,
+                Teams = new List<TeamDTO>()
+                {
+                    team5
+                }
+            };
+            TourneyDTO tourney4 = new TourneyDTO
+            {
+                TourneyID = 4,
+                User = user1,
+                Winner = team6,
+                TypeOf = TourneyStyleEnum.SixDouble,
+                Teams = new List<TeamDTO>()
+                {
+                    team6
+                }
+            };
+            TourneyDTO tourney5 = new TourneyDTO
+            {
+                TourneyID = 5,
+                User = user1,
+                Winner = team7,
+                TypeOf = TourneyStyleEnum.SixDouble,
+                Teams = new List<TeamDTO>()
+                {
+                    team7
+                }
+            };
+            _Context.SaveChanges();
+
             AvailabilityDTO availabilityUser1Date1 = new AvailabilityDTO
             {
                 AvailabilityID = 1,
@@ -207,6 +288,24 @@ namespace LAN_DAL
                 Available = AvailabilityEnum.Available,
                 User = user2
             };
+            AvailabilityDTO availabilityUser1Date4 = new AvailabilityDTO
+            {
+                AvailabilityID = 11,
+                Available = AvailabilityEnum.Available,
+                User = user1
+            };
+            AvailabilityDTO availabilityUser1Date5 = new AvailabilityDTO
+            {
+                AvailabilityID = 12,
+                Available = AvailabilityEnum.Available,
+                User = user1
+            };
+            AvailabilityDTO availabilityUser1Date6 = new AvailabilityDTO
+            {
+                AvailabilityID = 13,
+                Available = AvailabilityEnum.Available,
+                User = user1
+            };
 
             DateDTO date1Party1 = new DateDTO
             {
@@ -233,7 +332,6 @@ namespace LAN_DAL
                     availabilityUser4Date2
                 }
             };
-
             DateDTO date1Party2 = new DateDTO
             {
                 DateID = 3,
@@ -242,6 +340,33 @@ namespace LAN_DAL
                 {
                     availabilityUser1Date3,
                     availabilityUser2Date3
+                }
+            };
+            DateDTO date1Party3 = new DateDTO
+            {
+                DateID = 4,
+                DateTime = new DateTime(2021, 11, 12, 19, 00, 00),
+                UsersAvailable = new List<AvailabilityDTO>()
+                {
+                    availabilityUser1Date4
+                }
+            };
+            DateDTO date1Party4 = new DateDTO
+            {
+                DateID = 5,
+                DateTime = new DateTime(2021, 11, 12, 19, 00, 00),
+                UsersAvailable = new List<AvailabilityDTO>()
+                {
+                    availabilityUser1Date5
+                }
+            };
+            DateDTO date1Party5 = new DateDTO
+            {
+                DateID = 6,
+                DateTime = new DateTime(2021, 11, 12, 19, 00, 00),
+                UsersAvailable = new List<AvailabilityDTO>()
+                {
+                    availabilityUser1Date6
                 }
             };
 
@@ -273,19 +398,67 @@ namespace LAN_DAL
                     date1Party2
                 }
             };
+            PartyDTO partyDTO3 = new PartyDTO
+            {
+                PartyID = 3,
+                User = user1,
+                Tourney = tourney3,
+                Title = "Third LAN Party",
+                Game = "Dark Souls III",
+                DateOfParty = date1Party3.DateTime,
+                Dates = new List<DateDTO>()
+                {
+                    date1Party3
+                }
+            };
+            PartyDTO partyDTO4 = new PartyDTO
+            {
+                PartyID = 4,
+                User = user1,
+                Tourney = tourney4,
+                Title = "Fourth LAN Party",
+                Game = "The Last Of Us Remastered",
+                DateOfParty = date1Party4.DateTime,
+                Dates = new List<DateDTO>()
+                {
+                    date1Party4
+                }
+            };
+            PartyDTO partyDTO5 = new PartyDTO
+            {
+                PartyID = 5,
+                User = user1,
+                Tourney = tourney5,
+                Title = "The party of all parties!!",
+                Game = "Terraria",
+                DateOfParty = date1Party5.DateTime,
+                Dates = new List<DateDTO>()
+                {
+                    date1Party5
+                }
+            };
 
             _Context.Teams.Add(team1);
             _Context.Teams.Add(team2);
             _Context.Teams.Add(team3);
             _Context.Teams.Add(team4);
+            _Context.Teams.Add(team5);
+            _Context.Teams.Add(team6);
+            _Context.Teams.Add(team7);
             _Context.SaveChanges();
 
             _Context.Tourneys.Add(tourney1);
             _Context.Tourneys.Add(tourney2);
+            _Context.Tourneys.Add(tourney3);
+            _Context.Tourneys.Add(tourney4);
+            _Context.Tourneys.Add(tourney5);
             _Context.SaveChanges();
 
             _Context.Parties.Add(partyDTO);
             _Context.Parties.Add(partyDTO2);
+            _Context.Parties.Add(partyDTO3);
+            _Context.Parties.Add(partyDTO4);
+            _Context.Parties.Add(partyDTO5);
             _Context.SaveChanges();
 
         }

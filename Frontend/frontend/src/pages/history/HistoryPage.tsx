@@ -19,29 +19,33 @@ export default function HistoryPage() {
     async function getGame(gamestring: string) {
         gamestring = gamestring.replace(/\s/g, "-");
         let game = await RAWGAPI.getGame(gamestring);
-        setGame(game);
+        await setGame(game);
         if (games.includes(game)) {
         } else {
-            games.push(game);
+            await games.push(game);
         }
         console.log(game);
-        //console.log(game);
+        console.log(game.background_image);
     }
 
-    console.log(games);
+    //console.log(games);
+    console.log(gameImages);
+    //console.log(parties);
+    //console.log(game);
 
     async function getParties() {
         let parties = await PartyAPI.getParties(1);
         parties.forEach((element) => {
             getGame(element.game); // BEPERK API
-            console.log(games);
+            //console.log(games);
             games.forEach((g) => {
-                if (g.name === element.game) {
+                if (element.game === g.name) {
+                    new Promise((f) => setTimeout(f, 100));
                     element.gameImage = g.background_image;
                 }
             });
 
-            console.log(game?.background_image);
+            console.log(element?.gameImage);
         });
         setParties(parties);
     }
@@ -63,8 +67,17 @@ export default function HistoryPage() {
                                 </div>
                                 <h2 className="PartyTourney">{party ? "Party" : "Tourney"} </h2>
                                 <h2 className="Date">{new Date(party.dateOfParty).toDateString()}</h2>
+                                {party.gameImage ? (
+                                    <div>
+                                        <img className="GameImage" alt="Game Image" src={party.gameImage} />
+                                    </div>
+                                ) : (
+                                    <div>
+                                        <img className="GameImage" alt="Game Image" src={GameImage} />
+                                    </div>
+                                )}
                                 {/* <img className="GameImage" alt="Game Image" src={GameImage} />{" "} */}
-                                <img className="GameImage" alt="Game Image" src={party?.gameImage} />{" "}
+                                {/* <img className="GameImage" alt="Game Image" src={party?.gameImage} />{" "} */}
                                 <h2 className="GameStats">Game: {party.game}</h2>
                                 <h2 className="GameStats">Winner: {party.tourney.winner.name} </h2>
                                 <h2 className="GameStats">Tourney: {party.tourney.tourneyID}</h2>

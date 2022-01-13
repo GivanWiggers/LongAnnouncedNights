@@ -24,15 +24,18 @@ function NavbarRedirects() {
         <section>
             <img alt="LAN" src={LANLogo} onClick={() => history.push("menu")} />
             {/* <AddIcon className="AddButton" onClick={() => history.push("menu")}/> */}
+            <p className={pathname === "/menu" ? "bold-text" : ""} onClick={() => history.push("menu")}>
+                Home
+            </p>
             <p className={pathname === "/login" ? "bold-text" : ""} onClick={() => history.push("login")}>
                 Login
             </p>
-            <p className={pathname === "/history" ? "bold-text" : ""} onClick={() => history.push("history")}>
+            {/* <p className={pathname === "/history" ? "bold-text" : ""} onClick={() => history.push("history")}>
                 History
             </p>
             <p className={pathname === "/party" ? "bold-text" : ""} onClick={() => history.push("party")}>
                 Party
-            </p>
+            </p> */}
             {/* <p className={pathname === "/menu" ? "bold-text" : ""} onClick={() => history.push("menu")}>Menu</p> */}
         </section>
     );
@@ -42,7 +45,7 @@ function NavbarUserSection() {
     const history = useHistory();
     return (
         <section>
-            <AddIcon onClick={() => history.push("menu")} />
+            <AddIcon onClick={() => history.push("partymaker")} />
             <AccountIcon />
             <div className="Name-Container">
                 <p>User1</p>
